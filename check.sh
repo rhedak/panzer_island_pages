@@ -9,6 +9,9 @@ if ! command -v uv &>/dev/null; then
     exit 1
 fi
 
+echo "Checking asset sync..."
+uv run python sync_assets.py
+
 echo "Building MkDocs site..."
 uv run mkdocs build --strict 2>&1
 

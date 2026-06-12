@@ -20,7 +20,10 @@ theme:
 nav:
   - Home: index.md
   - Guides:
-    - guides/index.md
+    - Overview: guides/index.md
+    - Getting Started: guides/getting-started.md
+    - Your Units: guides/characters.md
+    - Reactive Turns: guides/reactive_turns.md
   - Press Kit: press/index.md
   - Blog:
     - blog/index.md

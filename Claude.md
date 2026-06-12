@@ -31,6 +31,23 @@ uv run mkdocs build   # one-off build check
 - Blog posts live under `docs/blog/posts/` with `date:` in front matter.
 - Run `./check.sh` after any structural change to verify the build stays clean.
 
+## Asset sync workflow
+
+Guide Markdown and images are generated in `../tank_tactics_2d` and synced here.
+`sync_manifest.toml` is the SSoT for what lives where. When the sister repo updates
+guide content, run:
+
+```
+uv run python sync_assets.py          # check what is stale
+uv run python sync_assets.py --sync   # pull updates in
+```
+
+To add a new synced asset, add an entry to `sync_manifest.toml`. The script handles
+both individual files (`[[files]]`) and whole directories (`[[dirs]]`).
+
+The sister repo is not available in CI, so the sync check is skipped automatically
+on GitHub Actions (the script exits 0 if the sister path does not exist).
+
 ## After every code change
 Run `./check.sh` to verify the project loads without errors before reporting a task complete.
 

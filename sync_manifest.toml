@@ -1,0 +1,24 @@
+# Asset sync manifest
+# Maps source paths (relative to sister repo root) to dest paths (relative to this repo root).
+# Run:  uv run python sync_assets.py          -- check only
+#       uv run python sync_assets.py --sync   -- copy updated/missing files
+
+[repos]
+sister = "../tank_tactics_2d"
+
+# Individual Markdown guide files
+[[files]]
+src = "docs/player_guide/reactive_turns.md"
+dst = "docs/guides/reactive_turns.md"
+
+# Guide asset images (whole directory)
+[[dirs]]
+src = "docs/player_guide/guide_assets"
+dst = "docs/guides/guide_assets"
+glob = "*.png"
+
+# Marketing screenshots (used on landing page and press kit)
+[[dirs]]
+src = "marketing"
+dst = "docs/assets/screenshots"
+glob = "screenshot_*.png"
