@@ -50,18 +50,29 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 ## Screenshots
 
 ![Screenshot 1](assets/screenshots/screenshot_01.png)
+
 ![Screenshot 2](assets/screenshots/screenshot_02.png)
+
 ![Screenshot 3](assets/screenshots/screenshot_03.png)
+
 ![Screenshot 4](assets/screenshots/screenshot_04.png)
 
 ---
 
-## Play the demo free
+## How AI was used to make this game
 
-Chapter 1 (10 stages, roughly one to two hours) is available for free on all platforms. The full game spans six chapters and three endings.
+Panzer Island is a solo project. Generative AI was used throughout development for code, character portraits, and playtesting. A detailed account of where it helped, where it did not, and the line between the two is posted on the blog.
 
-[Steam](#){ .md-button .md-button--primary }
-[Android](#){ .md-button }
-[itch.io](#){ .md-button }
+[Read the full article](blog/posts/2026-06-13-ai-in-development.md){ .md-button }
 
-*Links updated on release.*
+---
+
+## Get the game
+
+Chapter 1 (10 stages, roughly one to two hours) is free on all platforms. The full game spans six chapters and three endings and is a one-time purchase.
+
+[Steam](https://store.steampowered.com/app/4757690/Panzer_Island/){ .md-button .md-button--primary }
+[Google Play](https://play.google.com/store/apps/details?id=com.rhedak.panzerisland){ .md-button }
+[itch.io](https://rhedak.itch.io/panzer-island-web){ .md-button }
+
+Steam offers the Chapter 1 demo and the full game as separate entries. Google Play and itch.io ship as a single app with Chapter 1 free and Chapters 2 onward unlocked by a one-time in-app purchase.

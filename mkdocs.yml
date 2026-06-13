@@ -6,10 +6,12 @@ site_dir: site
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/shortcut_icon.png
   palette:
     scheme: slate
-    primary: deep orange
-    accent: amber
+    primary: custom
+    accent: custom
   features:
     - navigation.tabs
     - navigation.sections
@@ -23,10 +25,14 @@ nav:
     - Overview: guides/index.md
     - Getting Started: guides/getting-started.md
     - Your Units: guides/characters.md
+    - Drones: guides/drones.md
     - Reactive Turns: guides/reactive_turns.md
   - Press Kit: press/index.md
   - Blog:
     - blog/index.md
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search

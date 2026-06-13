@@ -17,5 +17,8 @@ An introduction to the reactive turn system, the three units, and the basic tact
 **[Your Units](characters.md)**
 A reference page for Katyusha, Nadeshiko, and Maria: their strengths, weaknesses, skill trees, and limit breaks.
 
+**[Drone Reference](drones.md)**
+Stats, behaviors, counters, and tactical notes for every drone type in the game. Covers the guard tower, patrol, sentinel, interceptor, cruiser, artillery, relay node, spotter, repair drone, and detonator families.
+
 **[Reactive Turns: A Deep Dive](reactive_turns.md)**
 A detailed breakdown of how the reactive turn system works, including drone detection, pursuit, passive fire, reflex responses, and limit break interactions.

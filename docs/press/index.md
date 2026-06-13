@@ -13,9 +13,9 @@ description: Press information, descriptions, and media assets for Panzer Island
 | **Genre** | 2D top-down strategy |
 | **Developer** | Solo developer |
 | **Engine** | Godot 4 |
-| **Platforms** | Steam (Windows/Mac), Android, itch.io |
-| **Business model** | Pay-once. Chapter 1 (10 stages) free as demo. |
-| **Status** | In development. Chapter 1 demo available. |
+| **Platforms** | [Steam](https://store.steampowered.com/app/4757690/Panzer_Island/) (Win/Mac), [Google Play](https://play.google.com/store/apps/details?id=com.rhedak.panzerisland), [itch.io](https://rhedak.itch.io/panzer-island-web) |
+| **Business model** | Chapter 1 free on all platforms. Full game (Ch. 2 onward) one-time purchase. Steam ships demo and full game as separate entries. |
+| **Status** | Available now. |
 | **Languages** | English (other locales via browser auto-translation) |
 
 ---
@@ -49,9 +49,13 @@ Chapter 1 (10 stages, one to two hours) is free on all platforms. The full game 
 Screenshots are free to use for editorial and review purposes.
 
 ![Screenshot 1](../assets/screenshots/screenshot_01.png)
+
 ![Screenshot 2](../assets/screenshots/screenshot_02.png)
+
 ![Screenshot 3](../assets/screenshots/screenshot_03.png)
+
 ![Screenshot 4](../assets/screenshots/screenshot_04.png)
+
 ![Screenshot 5](../assets/screenshots/screenshot_05.png)
 
 ---

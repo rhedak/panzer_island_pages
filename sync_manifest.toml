@@ -22,3 +22,35 @@ glob = "*.png"
 src = "marketing"
 dst = "docs/assets/screenshots"
 glob = "screenshot_*.png"
+
+# Site branding assets
+[[files]]
+src = "marketing/logo.png"
+dst = "docs/assets/logo.png"
+
+[[files]]
+src = "marketing/shortcut_icon.png"
+dst = "docs/assets/shortcut_icon.png"
+
+[[files]]
+src = "marketing/page_background.png"
+dst = "docs/assets/page_background.png"
+
+# Target-type badge icons (used in drone reference legend)
+[[files]]
+src = "assets/generated/ui/icon_target_all.png"
+dst = "docs/assets/ui/icon_target_all.png"
+
+[[files]]
+src = "assets/generated/ui/icon_target_ag.png"
+dst = "docs/assets/ui/icon_target_ag.png"
+
+[[files]]
+src = "assets/generated/ui/icon_target_aa.png"
+dst = "docs/assets/ui/icon_target_aa.png"
+
+# Drone sprites (base + typed variants, no animation frames)
+[[dirs]]
+src = "assets/generated/drones"
+dst = "docs/assets/drones"
+glob = "*[!0-9].png"

@@ -1,0 +1,79 @@
+/* ── Panzer Island site theme ── */
+
+/* Shift the slate scheme hue toward military green */
+[data-md-color-scheme="slate"] {
+  --md-hue: 135;
+}
+
+/* Primary: dark military green (header, active nav, buttons) */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #1a2e1c;
+  --md-primary-fg-color--light: #243e28;
+  --md-primary-fg-color--dark:  #111e13;
+  --md-primary-bg-color:        #c8eacc;
+  --md-primary-bg-color--light: rgba(200, 234, 204, 0.7);
+}
+
+/* Accent: cyan-teal (links, hover states, inline code) */
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color:              #3dcfc4;
+  --md-accent-fg-color--transparent: rgba(61, 207, 196, 0.1);
+  --md-accent-bg-color:              #1a2e1c;
+  --md-accent-bg-color--light:       #243e28;
+}
+
+/* Header: apply the tactical HUD texture over the green background */
+.md-header {
+  background-image: url('../assets/page_background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Keep the header text legible over the texture */
+.md-header__title,
+.md-header__topic {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Logo: constrain to nav bar height */
+.md-header__button.md-logo img {
+  height: 2rem;
+  width: auto;
+}
+
+/* Drone reference sprites: render crisp pixel art at natural 90×90 px */
+.drone-sprite {
+  image-rendering: pixelated;
+  width: 90px;
+  height: 90px;
+  vertical-align: middle;
+  margin: 0 4px 4px 0;
+}
+
+/* Drone reference: level selector widget */
+.drone-level-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--md-code-bg-color);
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+.drone-level-selector input[type="range"] {
+  flex: 1;
+  max-width: 18rem;
+}
+.drone-level-selector strong {
+  min-width: 2ch;
+  display: inline-block;
+}
+
+/* Target-type badge icons shown inline in the drone reference legend */
+.target-badge {
+  image-rendering: pixelated;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
