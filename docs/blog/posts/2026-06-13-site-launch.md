@@ -22,7 +22,7 @@ The chapter is not yet public. I am finishing a polish pass: balancing the later
 
 The [guides section](../../guides/index.md) has three pages ready:
 
-- [Getting Started](../../guides/getting-started.md): a short practical overview for new players.
+- [Getting Started](../../guides/index.md): a short practical overview for new players.
 - [Your Units](../../guides/characters.md): Katyusha, Nadeshiko, and Maria, their skill trees and limit breaks.
 - [Reactive Turns: A Deep Dive](../../guides/reactive_turns.md): the full mechanical breakdown of how the reactive turn system works.
 

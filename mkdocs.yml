@@ -22,11 +22,19 @@ theme:
 nav:
   - Home: index.md
   - Guides:
-    - Overview: guides/index.md
-    - Getting Started: guides/getting-started.md
+    - Getting Started: guides/index.md
     - Your Units: guides/characters.md
     - Drones: guides/drones.md
+    - Stage Objectives: guides/objectives.md
+    - Advanced Tactics: guides/advanced.md
+    - Skill Builds: guides/skill-builds.md
     - Reactive Turns: guides/reactive_turns.md
+  - Story:
+    - The World: story/index.md
+    - Characters: story/characters.md
+  - FAQ: faq.md
+  - Support: support.md
+  - Credits: credits.md
   - Press Kit: press/index.md
   - Blog:
     - blog/index.md
@@ -36,7 +44,10 @@ extra_css:
 
 plugins:
   - search
-  - blog
+  - blog:
+      blog_toc: true
+      post_date_format: long
+      archive: true
 
 markdown_extensions:
   - admonition

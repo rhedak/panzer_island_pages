@@ -54,3 +54,16 @@ dst = "docs/assets/ui/icon_target_aa.png"
 src = "assets/generated/drones"
 dst = "docs/assets/drones"
 glob = "*[!0-9].png"
+
+# Unit sprites (single base frame per unit)
+[[files]]
+src = "assets/generated/units/katyusha.png"
+dst = "docs/assets/units/katyusha.png"
+
+[[files]]
+src = "assets/generated/units/nadeshiko.png"
+dst = "docs/assets/units/nadeshiko.png"
+
+[[files]]
+src = "assets/generated/units/maria.png"
+dst = "docs/assets/units/maria.png"

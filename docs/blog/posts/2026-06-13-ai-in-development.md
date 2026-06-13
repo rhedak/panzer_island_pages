@@ -1,12 +1,12 @@
 ---
 date: 2026-06-13
-title: How generative AI was used to make Panzer Island
+title: How generative AI supported the making of Panzer Island
 description: A detailed account of where AI helped, where it did not, and the line between the two.
 authors:
   - dev
 ---
 
-# How generative AI was used to make Panzer Island
+# How generative AI supported the making of Panzer Island
 
 Panzer Island is a solo project. One developer. A full-length strategy game with a written narrative, three playable characters, a custom toolchain, and a campaign solver that can verify every stage is beatable before a build ships.
 

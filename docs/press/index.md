@@ -62,4 +62,4 @@ Screenshots are free to use for editorial and review purposes.
 
 ## Contact
 
-For review keys, press inquiries, or interview requests, contact: rhedak00@yahoo.de
+For review keys, press inquiries, or interview requests, contact: panzerisland@proton.me

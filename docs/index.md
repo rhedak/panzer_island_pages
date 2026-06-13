@@ -11,6 +11,15 @@ In most turn-based games, enemies wait patiently while you move. Panzer Island w
 
 You command three AI units across a drone-controlled island, slowly uncovering the truth about what happened there.
 
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/NaPPuQh4wyk"
+          title="Panzer Island gameplay sample"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+</div>
+
 ---
 
 ## Key features
@@ -29,20 +38,37 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 
 ## The units
 
-<div class="grid cards" markdown>
+<div class="unit-card">
+  <img src="assets/portraits/katyusha_neutral.webp" class="unit-card__portrait" alt="Katyusha">
+  <img src="assets/units/katyusha.png" class="unit-card__sprite" alt="Katyusha tank unit">
+  <div class="unit-card__body">
+    <p class="unit-card__name">Katyusha</p>
+    <p class="unit-card__role">Tank pilot AI</p>
+    <p>An AI character who controls a battle tank. High HP, high attack, terrain cover. Her limit break, Iron Curtain, blocks incoming fire and counter-attacks drones that shoot at her while it is active.</p>
+    <a href="guides/characters/#katyusha" class="unit-card__link">Stats and skills</a>
+  </div>
+</div>
 
--   **Katyusha**
+<div class="unit-card">
+  <img src="assets/portraits/nadeshiko_neutral.webp" class="unit-card__portrait" alt="Nadeshiko">
+  <img src="assets/units/nadeshiko.png" class="unit-card__sprite" alt="Nadeshiko helicopter unit">
+  <div class="unit-card__body">
+    <p class="unit-card__name">Nadeshiko</p>
+    <p class="unit-card__role">Helicopter pilot AI</p>
+    <p>An AI character who pilots a reconnaissance helicopter. Flies over any terrain. Her limit break, Storm Run, sends her dashing in a straight line, dealing damage to every drone along the path.</p>
+    <a href="guides/characters/#nadeshiko" class="unit-card__link">Stats and skills</a>
+  </div>
+</div>
 
-    Tank. High HP, high attack, terrain cover. Her limit break, Iron Curtain, blocks incoming fire and counter-attacks up to three drones that shoot at her while it is active.
-
--   **Nadeshiko**
-
-    Helicopter. Flies over any terrain. Her limit break, Storm Run, sends her dashing through a straight line, dealing damage to every drone along the path.
-
--   **Maria**
-
-    Ship. Long-range, water-bound, and devastating against stationary targets. Her limit break, Broadside, fires a 3x3 barrage that suppresses drone counterfire while it lands.
-
+<div class="unit-card">
+  <img src="assets/portraits/maria_neutral.webp" class="unit-card__portrait" alt="Maria">
+  <img src="assets/units/maria.png" class="unit-card__sprite" alt="Maria warship unit">
+  <div class="unit-card__body">
+    <p class="unit-card__name">Maria</p>
+    <p class="unit-card__role">Warship AI</p>
+    <p>An AI character who commands a warship. Long-range, water-bound, and devastating against stationary targets. Her limit break, Broadside, fires a 3x3 barrage that suppresses drone counterfire while it lands.</p>
+    <a href="guides/characters/#maria" class="unit-card__link">Stats and skills</a>
+  </div>
 </div>
 
 ---
@@ -59,7 +85,15 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 
 ---
 
-## How AI was used to make this game
+## New to the game?
+
+The reactive turn system takes about five minutes to click. The Getting Started guide walks you through how movement works, what each unit does, and the handful of things that matter most in Chapter 1.
+
+[Getting Started guide](guides/index.md){ .md-button }
+
+---
+
+## How AI supported the making of this game
 
 Panzer Island is a solo project. Generative AI was used throughout development for code, character portraits, and playtesting. A detailed account of where it helped, where it did not, and the line between the two is posted on the blog.
 
@@ -71,8 +105,10 @@ Panzer Island is a solo project. Generative AI was used throughout development f
 
 Chapter 1 (10 stages, roughly one to two hours) is free on all platforms. The full game spans six chapters and three endings and is a one-time purchase.
 
-[Steam](https://store.steampowered.com/app/4757690/Panzer_Island/){ .md-button .md-button--primary }
-[Google Play](https://play.google.com/store/apps/details?id=com.rhedak.panzerisland){ .md-button }
-[itch.io](https://rhedak.itch.io/panzer-island-web){ .md-button }
+<div class="platform-buttons">
+<a href="https://store.steampowered.com/app/4757690/Panzer_Island/" class="md-button md-button--primary platform-btn"><img src="assets/logo_steam.svg" class="platform-logo"> Steam</a>
+<a href="https://play.google.com/store/apps/details?id=com.rhedak.panzerisland" class="md-button platform-btn"><img src="assets/logo_google_play.svg" class="platform-logo"> Google Play</a>
+<a href="https://rhedak.itch.io/panzer-island-web" class="md-button platform-btn"><img src="assets/logo_itchio.svg" class="platform-logo platform-logo--invert"> itch.io</a>
+</div>
 
 Steam offers the Chapter 1 demo and the full game as separate entries. Google Play and itch.io ship as a single app with Chapter 1 free and Chapters 2 onward unlocked by a one-time in-app purchase.

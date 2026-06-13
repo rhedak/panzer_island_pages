@@ -20,6 +20,9 @@
   --md-accent-fg-color--transparent: rgba(61, 207, 196, 0.1);
   --md-accent-bg-color:              #1a2e1c;
   --md-accent-bg-color--light:       #243e28;
+  /* Material derives --md-typeset-a-color from built-in accent palettes only;
+     custom accent leaves it unset, so body links are invisible on slate. */
+  --md-typeset-a-color:              #3dcfc4;
 }
 
 /* Header: apply the tactical HUD texture over the green background */
@@ -39,6 +42,56 @@
 .md-header__button.md-logo img {
   height: 2rem;
   width: auto;
+}
+
+/* Secondary .md-button: Material uses --md-primary-fg-color for text/border,
+   but our custom primary is very dark (#1a2e1c) and invisible on slate.
+   Override to use the light primary background color instead. */
+.md-button:not(.md-button--primary) {
+  color: var(--md-primary-bg-color);
+  border-color: rgba(200, 234, 204, 0.45);
+}
+.md-button:not(.md-button--primary):focus,
+.md-button:not(.md-button--primary):hover {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  opacity: 1;
+}
+
+/* Platform store buttons container: stretches to full text column width */
+.platform-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* Each platform button: equal share of the row, logo on top, label below */
+.platform-btn {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.7rem 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Steam (primary) gets the same visible border as the secondary buttons */
+.md-button--primary.platform-btn {
+  border: 0.1rem solid rgba(200, 234, 204, 0.45);
+}
+
+.platform-logo {
+  height: 2rem;
+  width: 2rem;
+  object-fit: contain;
+}
+/* itch.io logo is black — invert to white on dark buttons */
+.platform-logo--invert {
+  filter: brightness(0) invert(1);
 }
 
 /* Drone reference sprites: render crisp pixel art at natural 90×90 px */
@@ -67,6 +120,82 @@
 .drone-level-selector strong {
   min-width: 2ch;
   display: inline-block;
+}
+
+/* Unit cards: character portrait | unit sprite | text, stacked vertically */
+.unit-card {
+  display: grid;
+  grid-template-columns: 140px 120px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.unit-card:last-of-type {
+  border-bottom: none;
+}
+.unit-card__portrait {
+  width: 140px;
+  border-radius: 0.25rem;
+  display: block;
+}
+.unit-card__sprite {
+  width: 120px;
+  height: 120px;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto;
+}
+.unit-card__body {
+  min-width: 0;
+}
+.unit-card__name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+.unit-card__role {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.6rem;
+  font-style: italic;
+}
+.unit-card__link {
+  font-size: 0.85rem;
+}
+/* Narrow screens: portrait + sprite side by side on top, text below */
+@media screen and (max-width: 600px) {
+  .unit-card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .unit-card__portrait {
+    width: 100%;
+  }
+  .unit-card__sprite {
+    width: 90px;
+    height: 90px;
+  }
+  .unit-card__body {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Responsive 16:9 video embed */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Target-type badge icons shown inline in the drone reference legend */

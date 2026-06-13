@@ -1,110 +1,136 @@
 ---
 title: Your units
-description: A reference page for Katyusha, Nadeshiko, and Maria: roles, strengths, skill trees, and limit breaks.
+description: Stats, skills, and limit breaks for Katyusha, Nadeshiko, and Maria in Panzer Island.
 ---
 
 # Your units
 
-Panzer Island gives you three units. They are not interchangeable: each has a distinct role, movement type, and limit break. Understanding what each unit does well, and where they are weak, is more useful than memorizing stats.
+Panzer Island gives you three units. They are not interchangeable: each has a distinct role, movement type, and limit break. Understanding what each unit does well, and where it is weak, is more useful than memorizing numbers.
+
+---
+
+## How to read this page
+
+**HP, Attack, Defense** are base level 1 values from the game data. They scale as units level up. Use the slider to preview values at higher levels.
+
+**Range** is the unit's normal attack range and does not scale.
+
+**Movement** shows which tile types the unit can traverse.
+
+**Limit break.** Each unit has a Limit Gauge that charges by +10 whenever they deal or take damage. When full, the player can trigger the unit's Limit Break instead of a normal action. The gauge resets after triggering and recharges from the next damage event. There is no per-stage cap: a unit that keeps absorbing fire can use their Limit Break more than once per stage.
+
+**Skill tracks.** At levels 4, 7, 14, and 17 the player picks one stack of either track, up to a cap of 2 stacks per track. By level 17 each track has exactly 2 stacks. Stacking one track early forces the other to fill in later.
+
+---
+
+<div class="drone-level-selector">
+  <label for="unit-level">Unit level: <strong id="unit-level-display">1</strong></label>
+  <input type="range" id="unit-level" min="1" max="100" value="1" step="1">
+</div>
+
+HP, Attack, and Defense update to match the selected level. Range does not scale.
 
 ---
 
 ## Katyusha
 
-**Role:** Frontline. She takes hits, absorbs fire, and pushes through defended positions.
+| |
+|:---:|
+| ![Katyusha](../assets/units/katyusha.png){ .drone-sprite } |
+| Katyusha |
 
-**Strengths:** High HP, high attack power, benefits from terrain cover.
+| HP | Attack | Defense | Range | Movement |
+|----|--------|---------|-------|----------|
+| <span class="unit-stat" data-base="150" data-rate="16.5">150</span> | <span class="unit-stat" data-base="25" data-rate="2.75">25</span> | <span class="unit-stat" data-base="13" data-rate="1.43">13</span> | 1 | Ground |
 
-**Weaknesses:** Slow. Vulnerable to aerial enemies (interceptors) that close distance quickly.
+**Role:** Frontline. Takes hits, holds ground, and pushes through defended positions.
 
-**When to use her:** Put Katyusha in front on any ground-heavy stage. She is your most durable unit and the one best positioned to draw drone fire while your other units set up.
+**Strengths:** Highest HP and defense of the three units. Gains cover bonuses from terrain. Her limit break turns fire into a counter-attack, making her actively dangerous to shoot at.
+
+**Weaknesses:** Short attack range (1). Interceptors fly over terrain and close distance quickly; Katyusha has no way to avoid their approach.
+
+**Cannot do:** Fire at range 2 or beyond. Cross water or fly. Move quickly across large maps. Katyusha is your frontline; she is not a flexible unit. If she needs to reach a target, she walks through whatever is in the way.
 
 ### Limit break: Iron Curtain
 
-Katyusha activates a counter-shield. While active, incoming damage is blocked and she counter-attacks up to two drones that fire on her (three with the Extended Curtain skill). Drones that fire beyond the cap still deal damage normally. The shield does not make her invulnerable. It makes her dangerous to shoot at.
+> *"Understood. Executing maximum force protocol."*
 
-Best used when pushing into a cluster of guard towers or a defended choke point.
+Katyusha activates a counter-shield. While active, incoming damage is blocked and she counter-attacks up to N unique drones that fire on her. Drones that fire beyond the reflect cap still deal damage normally. The shield is not invulnerability; it is a threat multiplier against clusters.
 
-### Skill tree
+| Track | Effect per stack | Max stacks |
+|-------|-----------------|------------|
+| **Curtain Capacity** | Reflect cap +2 (base cap: 2, fully stacked: 6) | 2 |
+| **Curtain Reflect** | Counter damage +50% of base attack per stack (0 stacks: blocks only; 1 stack: 150%; 2 stacks: 200%) | 2 |
 
-| Level | Type | Skill | Effect |
-|---|---|---|---|
-| 2 | Passive | Thick Armor | +15% max HP |
-| 4 | Choice A | Suppressing Fire | Attacks reduce enemy movement next reaction |
-| 4 | Choice B | Fortify | Can spend an action to gain +30% defense until next move |
-| 5 | Passive | Hardened | Reduces damage from guard towers by 20% |
-| 7 | Choice A | Breakthrough | +6 defense permanently |
-| 7 | Choice B | Cover Fire | Adjacent friendly units take 15% less damage |
-| 8 | Passive | Battle-Worn | +5% attack for each unit lost in the current stage |
-| 10 | Passive | Last Stand | Below 25% HP: +25% attack and +25% defense |
-
-**Build notes:** Fortify (level 4B) pairs with any stage where Katyusha needs to hold a position rather than advance. Cover Fire (level 7B) is stronger on stages with tight formations where all three units operate in close range. Breakthrough (level 7A) is the safer pick for general use.
+Best used when pushing through a cluster of guard towers or a tight patrol group. Count how many drones will react before triggering; drones beyond the cap still hit.
 
 ---
 
 ## Nadeshiko
 
-**Role:** Scout and fast striker. She reaches places the other units cannot and can cut through enemy lines with her limit break.
+| |
+|:---:|
+| ![Nadeshiko](../assets/units/nadeshiko.png){ .drone-sprite } |
+| Nadeshiko |
 
-**Strengths:** Flies over all terrain types, including water, mountains, and forest. Long detection range. Can attack from angles the other units cannot reach.
+| HP | Attack | Defense | Range | Movement |
+|----|--------|---------|-------|----------|
+| <span class="unit-stat" data-base="120" data-rate="13.2">120</span> | <span class="unit-stat" data-base="30" data-rate="3.3">30</span> | <span class="unit-stat" data-base="10" data-rate="1.1">10</span> | 2 | Air |
 
-**Weaknesses:** Low HP. She cannot hold a position under fire. One bad route can end a stage.
+**Role:** Scout and fast striker. Reaches places the other units cannot, and eliminates high-value targets with her limit break.
 
-**When to use her:** Use Nadeshiko to flank isolated drones, cross impassable terrain, and scout ahead. Do not park her in drone range while other units are moving.
+**Strengths:** Flies over all terrain, including water, mountains, and forest. Highest base attack of the three units. Can approach from angles that ground and water units cannot reach.
+
+**Weaknesses:** Lowest HP and defense. She cannot absorb fire. One bad route into drone range can end a stage. Interceptors fly too and will pursue her regardless of terrain.
+
+**Cannot do:** Take hits. Nadeshiko is not a unit you route through active drone fire. Even a single guard tower hit is significant at her HP and defense values. If she ends up in range of multiple firing drones, she will not survive it. She is for flanking clean routes, not for trading fire.
 
 ### Limit break: Storm Run
 
-Nadeshiko dashes in a straight line to a target cell, damaging every drone adjacent to any cell on the path. She can walk into position first if the target is outside placement range. Drone reactions resolve after the dash completes.
+> *"Okay okay okay, hold on, I've got this!"*
 
-Best used to eliminate a high-value target deep in enemy territory, or to clear a formation that Katyusha cannot reach cleanly.
+Nadeshiko dashes in a straight line to a target cell within placement range, damaging every drone adjacent (Chebyshev 1) to any cell on the path. She can walk into position first if the target is outside placement range. Drone reactions resolve after the dash completes, not during it.
 
-### Skill tree
+| Track | Effect per stack | Max stacks |
+|-------|-----------------|------------|
+| **Storm Range** | Placement range +1 cell | 2 |
+| **Storm Damage** | Damage multiplier +×1 per stack | 2 |
 
-| Level | Type | Skill | Effect |
-|---|---|---|---|
-| 2 | Passive | Afterburner | +20% chance to dodge drone reactions (stacks with Evasive) |
-| 4 | Choice A | Recon Sweep | Reveals all drone patrol paths on the current stage |
-| 4 | Choice B | Hit and Run | Can move again after attacking, once per turn |
-| 5 | Passive | Evasive | +20% dodge chance on drone reactions (stacks with Afterburner) |
-| 7 | Choice A | Jamming Pod | Disables one drone's reaction for one turn |
-| 7 | Choice B | Precision Strike | Attacks ignore 30% of enemy defense |
-| 8 | Passive | Adrenaline | +10% attack when HP is below 50% |
-| 10 | Passive | Ghost Flight | Does not trigger drone detection on the first move each stage |
-
-**Build notes:** Afterburner and Evasive stack, making her significantly harder to hit at level 5. Recon Sweep (level 4A) is useful for stages where patrol timing is the main challenge. Hit and Run (level 4B) enables aggressive plays where she attacks and then repositions out of drone range.
+Best used to eliminate a high-priority target deep in enemy territory, or to clear a line of drones in a single action that Katyusha could not reach cleanly.
 
 ---
 
 ## Maria
 
-**Role:** Long-range support. She is powerful, water-bound, and most effective when she can operate from a stable position.
+| |
+|:---:|
+| ![Maria](../assets/units/maria.png){ .drone-sprite } |
+| Maria |
 
-**Strengths:** High attack range, strong against stationary targets, passive HP regeneration with skills. Her Broadside limit break clears formations without triggering drone counterfire.
+| HP | Attack | Defense | Range | Movement |
+|----|--------|---------|-------|----------|
+| <span class="unit-stat" data-base="135" data-rate="14.85">135</span> | <span class="unit-stat" data-base="27" data-rate="2.97">27</span> | <span class="unit-stat" data-base="11" data-rate="1.21">11</span> | 3 | Water |
 
-**Weaknesses:** Water-bound. She cannot move on land and is limited to stages with coastal or river access. Immobile relative to the other units.
+**Role:** Long-range support. Fires from a stable position and clears fortified clusters with her limit break.
 
-**When to use her:** On any stage with water access, park Maria in range of priority targets and let her fire. She is not a unit you advance aggressively. She fires from position.
+**Strengths:** Longest attack range of the three units. Can engage guard towers and artillery from outside their range. Her Broadside limit break suppresses drone counterfire while it lands.
+
+**Weaknesses:** Water-bound. She cannot move on land and is absent on stages without coastal or river access. Cannot close distance; most effective from a fixed firing position.
+
+**Cannot do:** Move on land. At all. Maria is completely absent from land-only stages. On stages that do have water, she cannot follow Katyusha and Nadeshiko into the interior. Plan her firing positions around water access, not around where the threats are. The threats need to be in her range from a water tile, or she cannot engage them.
 
 ### Limit break: Broadside
 
-Maria fires a 3x3 barrage centered on a target cell within placement range. She can reposition first if the target is outside range. Drones in the barrage area take damage but do not counterattack.
+> *"I'm sorry. But this has to end."*
 
-Best used to clear a packed defensive formation or break a position that is too costly to attack directly.
+Maria fires a 3x3 barrage centered on a target cell within placement range. Every drone in the barrage area takes damage but does not counterattack. She stays in place; she can reposition first if the aim point is outside range.
 
-### Skill tree
+| Track | Effect per stack | Max stacks |
+|-------|-----------------|------------|
+| **Broadside Range** | Placement range +1 cell | 2 |
+| **Broadside Damage** | Damage multiplier +×1 per stack | 2 |
 
-| Level | Type | Skill | Effect |
-|---|---|---|---|
-| 2 | Passive | Extended Range | +1 attack range |
-| 4 | Choice A | Suppression Barrage | Area attack that slows all drones in range for one turn |
-| 4 | Choice B | Shield Pulse | Once per stage, grants an adjacent unit a one-hit damage shield |
-| 5 | Passive | Calm Waters | Regenerates 10% HP at the start of each turn |
-| 7 | Choice A | Anchor | Can attack twice in one turn, but cannot move that turn |
-| 7 | Choice B | Safe Harbor | Adjacent units recover 15% HP at the start of each turn |
-| 8 | Passive | Heavy Ordnance | +20% damage against stationary targets |
-| 10 | Passive | Admiral's Eye | Reveals all enemy HP values on the current stage |
-
-**Build notes:** Extended Range at level 2 is immediately useful and lets her reach targets the other units cannot. Anchor (level 7A) makes her a stationary artillery platform. Safe Harbor (level 7B) is stronger when Katyusha is regularly absorbing damage nearby.
+Best used to clear a packed formation or break a defensive position that is too costly to attack directly. The suppression is the reason to trigger it: Broadside lets Maria deal heavy damage to a cluster without any drone in that cluster firing back.
 
 ---
 
@@ -112,8 +138,41 @@ Best used to clear a packed defensive formation or break a position that is too 
 
 The three units work best when their actions are coordinated rather than independent.
 
-A common pattern: Katyusha advances into a cluster, triggering drone reactions and charging her limit gauge. With Iron Curtain active, she counter-attacks the drones that fire on her. After her turn resolves, Nadeshiko flanks from an unexpected angle or uses Storm Run to finish isolated targets. Maria provides fire support from a position outside drone range, targeting anything with high HP or a relay node.
+A common pattern: Katyusha advances into a cluster, triggering drone reactions and charging her limit gauge. With Iron Curtain active she counter-attacks the drones that fire on her. After her turn resolves, Nadeshiko flanks from an unexpected angle or uses Storm Run to finish isolated targets. Maria provides fire support from outside drone range, targeting anything with high HP or a relay node.
 
-The same principle applies in reverse: if Katyusha needs to push through a fortified zone, use Nadeshiko or Maria to draw drone attention first, reducing the number of drones that react to Katyusha's advance.
+The same logic applies in reverse. If Katyusha needs to push through a fortified zone, use Nadeshiko or Maria to draw drone attention first, reducing how many drones react to Katyusha's advance.
 
 See [Reactive Turns](reactive_turns.md) for a full explanation of how passive fire and reflex responses affect all three units simultaneously.
+
+<script>
+(function () {
+  function applyLevel(level) {
+    document.getElementById("unit-level-display").textContent = level;
+    document.querySelectorAll(".unit-stat[data-base]").forEach(function (el) {
+      var base = parseFloat(el.dataset.base);
+      var rate = parseFloat(el.dataset.rate);
+      el.textContent = base + Math.trunc(rate * (level - 1));
+    });
+  }
+
+  function init() {
+    var slider = document.getElementById("unit-level");
+    if (!slider) return;
+    slider.addEventListener("input", function () {
+      applyLevel(parseInt(this.value, 10));
+    });
+    applyLevel(parseInt(slider.value, 10));
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+
+  /* Re-run after Material for MkDocs instant navigation swaps the page */
+  if (typeof document$ !== "undefined") {
+    document$.subscribe(init);
+  }
+})();
+</script>
