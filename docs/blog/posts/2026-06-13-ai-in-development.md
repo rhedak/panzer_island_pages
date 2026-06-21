@@ -160,3 +160,5 @@ If I had to state the principle in a single sentence: AI generates candidates; I
 The reactive turn system, the three-unit dynamic, the sector structure, the skill trees, the story of a scientist who caused a catastrophe and has spent a long time not looking at it directly. None of those came from a generator. They came from thinking about what kind of game I wanted to play, and not stopping until the thing in my hands matched it.
 
 The tools helped me get there faster. The getting there was mine to do.
+
+Don't like the use of AI for game art? Read [my unfiltered take](./2026-06-21-ai-art-the-latest-end-of-civilization.md).

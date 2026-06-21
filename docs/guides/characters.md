@@ -34,10 +34,15 @@ HP, Attack, and Defense update to match the selected level. Range does not scale
 
 ## Katyusha
 
-| |
-|:---:|
-| ![Katyusha](../assets/units/katyusha.png){ .drone-sprite } |
-| Katyusha |
+<div class="unit-card">
+  <img src="../assets/portraits/katyusha_neutral.webp" class="unit-card__portrait" alt="Katyusha">
+  <img src="../assets/units/katyusha.png" class="unit-card__sprite" alt="Katyusha tank unit">
+  <div class="unit-card__body">
+    <p class="unit-card__name">Katyusha</p>
+    <p class="unit-card__role">Tank pilot AI</p>
+    <p>An AI character who controls a battle tank. High HP, high attack, terrain cover. Her limit break, Iron Curtain, blocks incoming fire and counter-attacks drones that shoot at her while it is active.</p>
+  </div>
+</div>
 
 | HP | Attack | Defense | Range | Movement |
 |----|--------|---------|-------|----------|
@@ -68,10 +73,15 @@ Best used when pushing through a cluster of guard towers or a tight patrol group
 
 ## Nadeshiko
 
-| |
-|:---:|
-| ![Nadeshiko](../assets/units/nadeshiko.png){ .drone-sprite } |
-| Nadeshiko |
+<div class="unit-card">
+  <img src="../assets/portraits/nadeshiko_neutral.webp" class="unit-card__portrait" alt="Nadeshiko">
+  <img src="../assets/units/nadeshiko.png" class="unit-card__sprite" alt="Nadeshiko helicopter unit">
+  <div class="unit-card__body">
+    <p class="unit-card__name">Nadeshiko</p>
+    <p class="unit-card__role">Helicopter pilot AI</p>
+    <p>An AI character who pilots a reconnaissance helicopter. Flies over any terrain. Her limit break, Storm Run, sends her dashing in a straight line, dealing damage to every drone along the path.</p>
+  </div>
+</div>
 
 | HP | Attack | Defense | Range | Movement |
 |----|--------|---------|-------|----------|
@@ -102,10 +112,15 @@ Best used to eliminate a high-priority target deep in enemy territory, or to cle
 
 ## Maria
 
-| |
-|:---:|
-| ![Maria](../assets/units/maria.png){ .drone-sprite } |
-| Maria |
+<div class="unit-card">
+  <img src="../assets/portraits/maria_neutral.webp" class="unit-card__portrait" alt="Maria">
+  <img src="../assets/units/maria.png" class="unit-card__sprite" alt="Maria warship unit">
+  <div class="unit-card__body">
+    <p class="unit-card__name">Maria</p>
+    <p class="unit-card__role">Warship AI</p>
+    <p>An AI character who commands a warship. Long-range, water-bound, and devastating against stationary targets. Her limit break, Broadside, fires a 3x3 barrage that suppresses drone counterfire while it lands.</p>
+  </div>
+</div>
 
 | HP | Attack | Defense | Range | Movement |
 |----|--------|---------|-------|----------|

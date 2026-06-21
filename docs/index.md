@@ -24,13 +24,13 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 
 ## Key features
 
-**Reactive turn system.** Enemies respond to each individual step, not to a completed turn. Route planning is a skill, not a formality.
+**[Reactive turn system.](guides/reactive_turns.md)** Enemies respond to each individual step, not to a completed turn. Route planning is a skill, not a formality.
 
-**Three distinct units.** Katyusha is a tank built to absorb fire and push through defensive lines. Nadeshiko is a helicopter that ignores terrain and can dash through enemy formations. Maria is a ship with enough range and firepower to crack fortified positions from a distance.
+**[Three distinct units.](guides/characters.md)** Katyusha is a tank built to absorb fire and push through defensive lines. Nadeshiko is a helicopter that ignores terrain and can dash through enemy formations. Maria is a ship with enough range and firepower to crack fortified positions from a distance.
 
-**Limit breaks.** Each unit builds a limit gauge by dealing and taking damage. When full, they can unleash a powerful ability that can change the outcome of a difficult stage.
+**[Limit breaks.](guides/characters.md)** Each unit builds a limit gauge by dealing and taking damage. When full, they can unleash a powerful ability that can change the outcome of a difficult stage.
 
-**Skill trees.** Units level up permanently across the campaign. At key levels, you choose between two skills, shaping a build for your playstyle.
+**[Skill trees.](guides/skill-builds.md)** Units level up permanently across the campaign. At key levels, you choose between two skills, shaping a build for your playstyle.
 
 **A story worth following.** A scientist wakes with most of her memory gone. Her AI units know more than they are allowed to say. Six chapters across 60 stages and three endings.
 
