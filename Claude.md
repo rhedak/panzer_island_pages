@@ -62,6 +62,11 @@ Before writing any page content, read `docs/styleguide_en.md`.
 Key points: American English, no em dashes, sentence-case headings, every page
 needs `title` and `description` front matter.
 
+## Webnovel
+
+A free prose adaptation of the Panzer Island story is in development as a cross-promotion,
+targeting readers who have not played the game. Design document: `webnovel/design.md`.
+
 ## misc
 
 - do NOT commit unless asked
