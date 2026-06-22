@@ -38,7 +38,7 @@ There is no "enemy phase." Drones react during your own action, in real time
 ![Core loop: a unit advances step by step as drones react](guide_assets/scene_core_loop.png)
 
 When a mobile drone detects your unit at the edge of its detection band, it
-alerts and begins pursuit — closing distance every step:
+alerts and begins pursuit, closing distance every step:
 
 ![Pursuit: an alerted drone moves toward the unit every step](guide_assets/scene_core_loop_pursuit.png)
 
@@ -48,7 +48,7 @@ alerts and begins pursuit — closing distance every step:
 
 Your units do not have a movement range in the traditional sense. Any walkable
 cell on the map is reachable in a single action. The cost of moving is not a
-hard limit on distance — it is the cumulative drone fire you absorb along the
+hard limit on distance. It is the cumulative drone fire you absorb along the
 route.
 
 Every cell you cross triggers a reaction from every drone that can see you at
@@ -77,17 +77,17 @@ the drone reacts.
 
 The reaction happens in two passes:
 
-**Pass 1 — Alert and queue attacks.** Every drone in range evaluates your
+**Pass 1: Alert and queue attacks.** Every drone in range evaluates your
 moving unit. Stationary types (guard towers, artillery) fire if you are within
 attack range. Mobile types (patrols, interceptors, cruisers) become **alerted**
 and queue a shot if in range, or begin pursuit if you are in the detection band
 but not yet in attack range.
 
-**Pass 2 — Fire and animate.** Each queued attack plays a projectile animation
+**Pass 2: Fire and animate.** Each queued attack plays a projectile animation
 and applies damage. Iron Curtain counters (if active) fire back after all
 projectiles resolve.
 
-**Pass 3 — Pursuit step.** Every alerted mobile drone takes one step toward
+**Pass 3: Pursuit step.** Every alerted mobile drone takes one step toward
 your unit. If that step brings it into attack range, it fires immediately from
 its new position. This is critical: a multi-cell move cannot outrun pursuit
 because the drone moves after every single step, not just at the end of your
@@ -124,7 +124,7 @@ reachable target if that unit moves out of its detection band.
 A drone **breaks off pursuit** when no unit is within its detection band
 (`attack range + 1`). When it breaks off, it stops moving and a flash
 indicates it is no longer tracking you. Drones that break off do not
-immediately re-alert if you step back into range next action — they react
+immediately re-alert if you step back into range next action. They react
 freshly on your next move.
 
 The game draws a **pursuit outline** on the map preview: orange cell borders
@@ -135,7 +135,7 @@ can see exactly what you are waking up before you commit.
 
 ## Passive Fire
 
-Drone reactions only fire at the **acting unit** — the one that just moved or
+Drone reactions only fire at the **acting unit**, the one that just moved or
 attacked. But what about your other units standing in drone range while
 Katyusha advances?
 
@@ -156,7 +156,7 @@ not the one acting.
 ## Reflex Responses
 
 When a non-acting unit takes damage from passive or pursuit fire, it may
-**reflex** — react without waiting for you to select it. Two types:
+**reflex**: react without waiting for you to select it. Two types:
 
 **Reflex counter.** If the damaged unit has a drone in its own attack range,
 it fires back immediately. This is a free attack, does not consume an action,
@@ -189,7 +189,7 @@ with this tiebreak).
 
 A patrol that cannot see you yet will drift one cell closer every action.
 This means you cannot safely bypass a patrol by staying out of its detection
-band indefinitely — it will eventually close the gap and become a threat.
+band indefinitely. It will eventually close the gap and become a threat.
 
 Stationary drones (guard towers, artillery, nexus) do not drift.
 
@@ -201,23 +201,23 @@ Stationary drones (guard towers, artillery, nexus) do not drift.
 Each unit has its own gauge (0-100), which fills by dealing and receiving
 damage. When full, you can trigger the Limit Break instead of a normal action.
 
-- **Katyusha — Iron Curtain:** Activates a protective counter-shield. While
+- **Katyusha: Iron Curtain:** Activates a protective counter-shield. While
   active, incoming damage is blocked and she counter-attacks up to 2 unique
   drones that fire on her (3 with the Extended Curtain skill). Hits beyond
   the cap deal damage normally.
 
   ![Iron Curtain: cell-border outline marks active state, incoming arrows show blocked shots, counter-attack labels show return damage](guide_assets/scene_iron_curtain.png)
 
-- **Nadeshiko — Storm Run:** Dashes in a straight line, damaging every drone
+- **Nadeshiko: Storm Run:** Dashes in a straight line, damaging every drone
   adjacent to any cell on the dash path. She can walk into position first if
   the target is outside placement range. Drone reactions resolve after the
   dash completes.
 
   ![Storm Run: Nadeshiko dashes through drones in a straight line, damaging all adjacent enemies](guide_assets/scene_storm_run.png)
 
-- **Maria — Broadside:** Fires a 3x3 barrage centered on a target cell,
+- **Maria: Broadside:** Fires a 3x3 barrage centered on a target cell,
   damaging every drone in the square. She stays in place (she can reposition
-  first). Drone reactions from the barrage are suppressed — drones take damage
+  first). Drone reactions from the barrage are suppressed. Drones take damage
   but do not counterattack.
 
   ![Broadside: Maria fires a 3x3 barrage at a target cell from her position on water](guide_assets/scene_broadside.png)
@@ -283,7 +283,7 @@ remaining plans return to the queue bar.
    unit's attack range.
 
 5. **Priority targets.** Relay nodes and spotters multiply the threat of
-   nearby drones. Eliminate them first. Detonators die in one hit — deal with
+   nearby drones. Eliminate them first. Detonators die in one hit. Deal with
    them before they reach your line.
 
 6. **Reflex is free damage.** Park a hard-hitter (Katyusha) in guard tower

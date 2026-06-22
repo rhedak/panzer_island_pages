@@ -48,15 +48,15 @@ Chapter 1 (10 stages, one to two hours) is free on all platforms. The full game 
 
 Screenshots are free to use for editorial and review purposes.
 
-![Screenshot 1](../assets/screenshots/screenshot_01.png)
+![Screenshot 1](../assets/screenshots/screenshot_01.webp)
 
-![Screenshot 2](../assets/screenshots/screenshot_02.png)
+![Screenshot 2](../assets/screenshots/screenshot_02.webp)
 
-![Screenshot 3](../assets/screenshots/screenshot_03.png)
+![Screenshot 3](../assets/screenshots/screenshot_03.webp)
 
-![Screenshot 4](../assets/screenshots/screenshot_04.png)
+![Screenshot 4](../assets/screenshots/screenshot_04.webp)
 
-![Screenshot 5](../assets/screenshots/screenshot_05.png)
+![Screenshot 5](../assets/screenshots/screenshot_05.webp)
 
 ---
 
