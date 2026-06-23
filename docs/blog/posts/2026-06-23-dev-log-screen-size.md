@@ -3,7 +3,7 @@ date: 2026-06-23
 title: "Dev Log: 2026-06-23"
 description: "The challenges of making a Godot 4 game work across PC, web, and Android screen sizes."
 authors:
-  - rhedak
+  - dev
 ---
 
 **Dev Log: 2026-06-23**  
