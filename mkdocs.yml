@@ -21,6 +21,9 @@ theme:
 
 nav:
   - Home: index.md
+  - Webnovel:
+    - Overview: webnovel/index.md
+    - "Chapter 1: First Steps": webnovel/ch01.md
   - Guides:
     - Getting Started: guides/index.md
     - Your Units: guides/characters.md

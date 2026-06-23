@@ -198,6 +198,57 @@
   border: 0;
 }
 
+/* Webnovel promo block on homepage: cover image left, text right */
+.webnovel-promo {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.webnovel-promo__cover-link {
+  display: block;
+  width: 130px;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.webnovel-promo__cover {
+  width: 100%;
+  border-radius: 0.25rem;
+  display: block;
+}
+.webnovel-promo__body > :first-child {
+  margin-top: 0;
+}
+@media screen and (max-width: 480px) {
+  .webnovel-promo {
+    flex-direction: column;
+  }
+  .webnovel-promo__cover {
+    width: 100px;
+  }
+}
+
+/* Webnovel cover image: centered portrait, constrained width */
+.webnovel-cover {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+}
+.webnovel-cover img {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 0.25rem;
+  display: block;
+}
+
+/* Webnovel chapter illustration: full article width with breathing room */
+img.chapter-illustration {
+  width: 100%;
+  max-width: 560px;
+  display: block;
+  border-radius: 0.25rem;
+  margin: 0 0 2rem;
+}
+
 /* Target-type badge icons shown inline in the drone reference legend */
 .target-badge {
   image-rendering: pixelated;

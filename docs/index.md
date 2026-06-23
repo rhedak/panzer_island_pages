@@ -32,7 +32,7 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 
 **[Skill trees.](guides/skill-builds.md)** Units level up permanently across the campaign. At key levels, you choose between two skills, shaping a build for your playstyle.
 
-**A story worth following.** A scientist wakes with most of her memory gone. Her AI units know more than they are allowed to say. Six chapters across 60 stages and three endings.
+**[A story worth following.](webnovel/index.md)** A scientist wakes with most of her memory gone. Her AI units know more than they are allowed to say. Six chapters across 60 stages and three endings. Also available as a [free illustrated novel](webnovel/index.md).
 
 ---
 
@@ -90,6 +90,19 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 The reactive turn system takes about five minutes to click. The Getting Started guide walks you through how movement works, what each unit does, and the handful of things that matter most in Chapter 1.
 
 [Getting Started guide](guides/index.md){ .md-button }
+
+---
+
+## Read the novel
+
+<div class="webnovel-promo">
+<a href="webnovel/" class="webnovel-promo__cover-link"><img src="assets/webnovel/0_title.webp" class="webnovel-promo__cover" alt="Panzer Island novel cover"></a>
+<div class="webnovel-promo__body">
+<p>The Panzer Island story is also available as a free illustrated prose novel, releasing one chapter per week on Saturdays. It covers the same events as the game with expanded character scenes and flashback chapters set before the catastrophe. No game knowledge required.</p>
+</div>
+</div>
+
+<a href="webnovel/" class="md-button">Read the novel</a>
 
 ---
 
