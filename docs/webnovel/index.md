@@ -31,6 +31,8 @@ before. The truth builds one layer at a time, and each layer reframes the last.
 
 New chapters release weekly on Saturdays (approx. 10pm JST). The novel is free.
 
+*This novel has also been submitted to Royal Road. A link will be added here once it is live.*
+
 [Read Chapter 1: First Steps](ch01.md){ .md-button .md-button--primary }
 
 ---
