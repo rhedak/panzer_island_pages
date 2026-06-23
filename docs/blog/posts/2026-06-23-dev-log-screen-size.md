@@ -11,6 +11,8 @@ authors:
 
 ---
 
+<!-- more -->
+
 ### Cross-Platform Viewport Scaling: A Tragedy in Three Acts
 
 I ship one humble Godot 4 game to **Steam** (PC/Mac/Linux), **itch.io** (web), and **Google Play** (Android). That’s three platforms, each with its own unique way of saying “lol no” to the concept of a consistent screen.
