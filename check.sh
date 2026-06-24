@@ -10,7 +10,9 @@ if ! command -v uv &>/dev/null; then
 fi
 
 echo "Checking asset sync..."
-uv run python sync_assets.py
+if ! uv run python sync_assets.py; then
+    echo "  (assets out of sync -- run: uv run python sync_assets.py --sync)"
+fi
 
 echo "Building MkDocs site..."
 uv run mkdocs build --strict 2>&1

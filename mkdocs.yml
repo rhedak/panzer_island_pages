@@ -24,6 +24,11 @@ nav:
   - Webnovel:
     - Overview: webnovel/index.md
     - "Chapter 1: First Steps": webnovel/ch01.md
+    - "Chapter 2: Assembly": webnovel/ch02.md
+    - "Chapter 2F: Population": webnovel/ch02f.md
+    - "Chapter 3: Oracle": webnovel/ch03.md
+    - "Chapter 4: The Guide": webnovel/ch04.md
+    - "Chapter 5: The Crossing": webnovel/ch05.md
   - Guides:
     - Getting Started: guides/index.md
     - Your Units: guides/characters.md

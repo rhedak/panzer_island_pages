@@ -1,6 +1,6 @@
 ---
 title: Panzer Island - The Novel
-description: A free prose adaptation of the Panzer Island story, releasing one chapter per week.
+description: A free prose adaptation of the Panzer Island story. Arc 1 is complete and free to read.
 ---
 
 # Panzer Island: The Novel
@@ -29,7 +29,7 @@ Erika designed the system at the heart of this. She does not remember what she d
 present-day investigation and flashback chapters that reveal what the island looked like
 before. The truth builds one layer at a time, and each layer reframes the last.
 
-New chapters release weekly on Saturdays (approx. 10pm JST). The novel is free.
+Arc 1 (Chapters 1-5) is now complete and free to read. Arc 2 is in production.
 
 *This novel has also been submitted to Royal Road. A link will be added here once it is live.*
 

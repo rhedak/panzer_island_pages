@@ -17,12 +17,6 @@ src = "docs/player_guide/guide_assets"
 dst = "docs/guides/guide_assets"
 glob = "*.png"
 
-# Marketing screenshots (used on landing page and press kit)
-[[dirs]]
-src = "marketing"
-dst = "docs/assets/screenshots"
-glob = "screenshot_*.png"
-
 # Site branding assets
 [[files]]
 src = "marketing/logo.png"
