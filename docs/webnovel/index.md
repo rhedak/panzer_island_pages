@@ -31,7 +31,7 @@ before. The truth builds one layer at a time, and each layer reframes the last.
 
 Arc 1 (Chapters 1-5) is now complete and free to read. Arc 2 is in production.
 
-*This novel has also been submitted to Royal Road. A link will be added here once it is live.*
+Also available on [Royal Road](https://www.royalroad.com/fiction/176303/panzer-island) and [Scribble Hub](https://www.scribblehub.com/series/2408903/panzer-island/).
 
 [Read Chapter 1: First Steps](ch01.md){ .md-button .md-button--primary }
 
