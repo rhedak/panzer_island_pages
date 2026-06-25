@@ -121,7 +121,7 @@ Chapter 1 (10 stages, roughly one to two hours) is free on all platforms. The fu
 <div class="platform-buttons">
 <a href="https://store.steampowered.com/app/4757690/Panzer_Island/" class="md-button md-button--primary platform-btn"><img src="assets/logo_steam.svg" class="platform-logo"> Steam</a>
 <a href="https://play.google.com/store/apps/details?id=com.rhedak.panzerisland" class="md-button platform-btn"><img src="assets/logo_google_play.svg" class="platform-logo"> Google Play</a>
-<a href="https://rhedak.itch.io/panzer-island-web" class="md-button platform-btn"><img src="assets/logo_itchio.svg" class="platform-logo platform-logo--invert"> itch.io</a>
+<a href="https://rhedak.itch.io/panzer-island-web" class="md-button platform-btn"><img src="assets/logo_itchio.svg" class="platform-logo platform-logo--invert"> itch.io (Browser)</a>
 </div>
 
-Steam offers the Chapter 1 demo and the full game as separate entries. Google Play and itch.io ship as a single app with Chapter 1 free and Chapters 2 onward unlocked by a one-time in-app purchase.
+Steam offers the Chapter 1 demo and the full game as separate entries. Google Play ships as a single app with Chapter 1 free and Chapters 2 onward unlocked by a one-time in-app purchase. The itch.io version plays directly in your browser with no download required.
