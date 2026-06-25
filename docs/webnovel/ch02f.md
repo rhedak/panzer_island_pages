@@ -1,6 +1,8 @@
 ---
 title: "Chapter 2F: Population"
 description: A flashback to Erika's first arrival on Panzer Island, before the catastrophe, when twenty thousand people were still there.
+revision: 2
+updated: 2026-06-25
 ---
 
 # Chapter 2F: Population
@@ -8,6 +10,8 @@ description: A flashback to Erika's first arrival on Panzer Island, before the c
 *Erika, before*
 
 *Published June 24, 2026*
+
+*Revision 2, updated June 25, 2026*
 
 ![Erika standing at the bow rail of the ferry approaching Panzer Island, the harbor visible in the distance](../assets/webnovel/ch02f.webp){ .chapter-illustration }
 

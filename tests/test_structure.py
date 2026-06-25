@@ -82,6 +82,27 @@ def test_published_chapters_have_front_matter():
     assert not bad, "Published chapters with bad front matter:\n" + "\n".join(bad)
 
 
+def test_published_chapters_have_revision_metadata():
+    """Every published chapter must have revision in front matter.
+
+    Chapters at revision 2+ must also have an updated field.
+    """
+    bad = []
+    for f in sorted(PUBLISHED_DIR.glob("ch*.md")):
+        if f.name == "index.md":
+            continue
+        text = f.read_text(encoding="utf-8")
+        meta, _ = parse_front_matter(text)
+        issues = []
+        if "revision" not in meta:
+            issues.append("missing revision")
+        elif meta["revision"] >= 2 and "updated" not in meta:
+            issues.append("revision >= 2 but missing updated")
+        if issues:
+            bad.append(f"{f.name}: {', '.join(issues)}")
+    assert not bad, "Published chapters missing revision metadata:\n" + "\n".join(bad)
+
+
 # ---------------------------------------------------------------------------
 # Author's note footer
 # ---------------------------------------------------------------------------
@@ -165,6 +186,21 @@ def test_published_chapters_have_date_line():
         if not re.search(r"^\*Published\s", text, re.MULTILINE):
             missing.append(f.name)
     assert not missing, "Published chapters missing date line:\n" + "\n".join(missing)
+
+
+def test_revised_chapters_have_revision_line():
+    """Chapters at revision 2+ must have a *Revision N, updated ...* line in the body."""
+    bad = []
+    for f in sorted(PUBLISHED_DIR.glob("ch*.md")):
+        if f.name == "index.md":
+            continue
+        text = f.read_text(encoding="utf-8")
+        meta, _ = parse_front_matter(text)
+        if meta.get("revision", 1) < 2:
+            continue
+        if not re.search(r"^\*Revision \d+, updated\s", text, re.MULTILINE):
+            bad.append(f.name)
+    assert not bad, "Revised chapters missing revision line:\n" + "\n".join(bad)
 
 
 # ---------------------------------------------------------------------------

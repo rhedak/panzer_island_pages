@@ -65,6 +65,10 @@ def strip_structural_elements(text: str) -> str:
         if re.match(r"^\*Published\s", stripped):
             continue
 
+        # Skip revision line (*Revision N, updated ...*)
+        if re.match(r"^\*Revision \d+", stripped):
+            continue
+
         # Skip image references (![...](...))
         if re.match(r"^!\[.*\]\(.*\)", stripped):
             continue
