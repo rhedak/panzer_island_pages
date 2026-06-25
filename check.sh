@@ -14,6 +14,12 @@ if ! uv run python sync_assets.py; then
     echo "  (assets out of sync -- run: uv run python sync_assets.py --sync)"
 fi
 
+echo "Checking punctuation (em dashes, double hyphens)..."
+if ! bash check_punctuation.sh docs/webnovel webnovel/chapters; then
+    echo "  (banned punctuation found in prose text)"
+    exit 1
+fi
+
 echo "Building MkDocs site..."
 uv run mkdocs build --strict 2>&1
 

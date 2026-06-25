@@ -51,7 +51,9 @@ on GitHub Actions (the script exits 0 if the sister path does not exist).
 ## After every code change
 Run `./check.sh` to verify the project loads without errors before reporting a task complete.
 
-`check.sh` runs `uv run mkdocs build --strict`. Any warning is treated as an error.
+`check.sh` runs asset sync check, punctuation lint, and `uv run mkdocs build --strict`. Any warning is treated as an error.
+
+For a full pre-deployment validation, run `./test.sh` which runs pytest with verbose output.
 
 ## Language and Styleguide
 

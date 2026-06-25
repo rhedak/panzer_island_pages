@@ -5,7 +5,7 @@ description: A flashback to Erika's first arrival on Panzer Island, before the c
 
 # Chapter 2F: Population
 
-*Erika - before*
+*Erika, before*
 
 *Published June 24, 2026*
 
@@ -101,7 +101,7 @@ At some point the light in the alcove windows had changed.
 
 The east wing looked out over the coast road and the harbor below. The town was lit now, the grid of it spreading from the waterfront up the slope, the market square dark, the school dark, the residential streets visible as lines of warm light. The ferry was back at the pier: the last crossing from the outer islands, the running lights clear in the early dark.
 
-I stood at the window longer than I meant to.
+I stood at the window longer than I had meant to.
 
 Twenty thousand people, approximately. The harbor town was perhaps a third of that. The rest distributed north and east, in the residential districts and the farming communities and the fishing villages I had passed signs for on the road.
 
