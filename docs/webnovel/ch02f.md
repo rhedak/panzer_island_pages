@@ -117,6 +117,10 @@ The phase four implementation note was still open.
 
 ---
 
+[Previous Chapter: Assembly](ch02.md) | [Next Chapter: Oracle](ch03.md)
+
+---
+
 *Author's note: Panzer Island is also a strategy game available on
 [Steam](https://store.steampowered.com/app/4757690/Panzer_Island/),
 [Google Play](https://play.google.com/store/apps/details?id=com.rhedak.panzerisland),

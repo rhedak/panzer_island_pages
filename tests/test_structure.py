@@ -269,7 +269,7 @@ def test_section_divider_count():
         pub_count = len(re.findall(r"^---$", pub_text, re.MULTILINE))
         draft_count = len(re.findall(r"^---$", draft_text, re.MULTILINE))
 
-        expected = draft_count + 3
+        expected = draft_count + 4
         if pub_count != expected:
             mismatches.append(
                 f"{pub.name}: published={pub_count}, draft={draft_count}, expected={expected}"

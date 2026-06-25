@@ -37,7 +37,7 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
 
 
 def strip_structural_elements(text: str) -> str:
-    """Strip front matter, heading, date line, image refs, and footer from text.
+    """Strip front matter, heading, date line, image refs, navigation, and footer from text.
 
     Returns only the prose body for comparison.
     """
@@ -71,6 +71,10 @@ def strip_structural_elements(text: str) -> str:
 
         # Skip image references (![...](...))
         if re.match(r"^!\[.*\]\(.*\)", stripped):
+            continue
+
+        # Skip navigation links ([Previous Chapter: ...] | [Next Chapter: ...])
+        if re.match(r"^\[Previous Chapter:.*\]\(.*\.md\)", stripped):
             continue
 
         # Skip footer (everything from "Author's note:" onward)

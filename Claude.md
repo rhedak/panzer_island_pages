@@ -69,6 +69,16 @@ needs `title` and `description` front matter.
 A free prose adaptation of the Panzer Island story is in development as a cross-promotion,
 targeting readers who have not played the game. Design document: `webnovel/design.md`.
 
+### Chapter navigation
+
+Published chapters have prev/next navigation links above the author's note footer.
+When adding a new chapter:
+
+1. Add the nav entry to `mkdocs.yml`
+2. Add `[Previous Chapter: ...](chXX.md) | [Next Chapter: ...](chYY.md)` to the new chapter
+3. Update the next chapter's "Previous" link to point to the new chapter
+4. Update the previous chapter's "Next" link to point to the new chapter
+
 ## misc
 
 - do NOT commit unless asked
