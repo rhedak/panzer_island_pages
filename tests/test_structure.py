@@ -203,6 +203,26 @@ def test_revised_chapters_have_revision_line():
     assert not bad, "Revised chapters missing revision line:\n" + "\n".join(bad)
 
 
+def test_flashback_chapters_have_subtitle_before_date():
+    """Flashback chapters (ch*F.md) must have a subtitle line after metadata, before prose.
+
+    The subtitle (e.g. *Erika, before*) should appear after the published/revision
+    lines but before the illustration and prose.
+    """
+    bad = []
+    for f in sorted(PUBLISHED_DIR.glob("ch*F.md")):
+        text = f.read_text(encoding="utf-8")
+        subtitle_match = re.search(r"^\*[A-Z][^*]+\*$", text, re.MULTILINE)
+        published_match = re.search(r"^\*Published\s", text, re.MULTILINE)
+        if not published_match:
+            continue  # tested elsewhere
+        if not subtitle_match:
+            continue
+        if subtitle_match.start() < published_match.start():
+            bad.append(f"{f.name}: subtitle appears before published date")
+    assert not bad, "Flashback chapters with incorrect subtitle order:\n" + "\n".join(bad)
+
+
 # ---------------------------------------------------------------------------
 # Published chapter illustration image
 # ---------------------------------------------------------------------------

@@ -7,11 +7,11 @@ updated: 2026-06-25
 
 # Chapter 2F: Population
 
-*Erika, before*
-
 *Published June 24, 2026*
 
 *Revision 2, updated June 25, 2026*
+
+*Erika, before*
 
 ![Erika standing at the bow rail of the ferry approaching Panzer Island, the harbor visible in the distance](../assets/webnovel/ch02f.webp){ .chapter-illustration }
 
