@@ -50,6 +50,7 @@ Use **American English** spellings.
 - Spell out one through nine in prose; use numerals for 10 and above.
 - Use numerals for all game-specific counts and statistics ("10 stages", "3 endings").
 - Percentages use numerals ("25% complete").
+- The webnovel (fiction/narrative prose) is exempt from the "numerals for 10+" rule; it uses literary conventions (spelled-out numbers). All other rules apply.
 
 ---
 

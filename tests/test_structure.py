@@ -147,7 +147,7 @@ def test_draft_filenames_follow_convention():
     """All draft chapter files must match ch[0-9]+[_name].md pattern."""
     bad = []
     for f in sorted(WEBNOVEL_DIR.glob("*.md")):
-        if "_notes" in f.name:
+        if "_notes" in f.name or f.name.endswith("_old.md") or re.search(r"_v\d+\.md$", f.name):
             continue
         if not re.match(r"ch\d+[a-z]?_[a-z_]+\.md$", f.name):
             bad.append(f.name)

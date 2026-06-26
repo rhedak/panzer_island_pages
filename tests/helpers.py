@@ -115,10 +115,18 @@ def published_filename_to_draft(filename: str) -> str | None:
     stem = Path(filename).stem  # e.g. "ch01"
     if not re.match(r"ch\d+[a-z]?$", stem):
         return None
-    # Find matching draft file
-    for f in WEBNOVEL_DIR.glob(f"{stem}_*.md"):
-        if "_notes" not in f.name:
-            return f.name
+    # Find matching draft file, preferring canonical over reference variants
+    candidates = sorted(
+        f
+        for f in WEBNOVEL_DIR.glob(f"{stem}_*.md")
+        if "_notes" not in f.name
+    )
+    # Prefer the shortest stem (canonical file, no _old _v3 etc)
+    canonical = [f for f in candidates if not re.search(r"_(old|v\d+)$", f.stem)]
+    if canonical:
+        return canonical[0].name
+    if candidates:
+        return candidates[0].name
     return None
 
 
