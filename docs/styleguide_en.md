@@ -85,6 +85,21 @@ proper names embedded in a heading ("Meet the Cast").
 Use a bulleted list when order does not matter. Use a numbered list for
 step-by-step instructions only. Do not use lists for single-item "lists."
 
+### 3.7 Horizontal rules
+
+Always follow a `---` horizontal rule with **two blank lines** before the next content.
+The first blank line is required for correct Markdown parsing. The second blank line
+survives as an empty paragraph when the chapter is copy-pasted into Royal Road or
+similar platforms, creating visible spacing there too. The visual breathing room in
+the MkDocs-rendered HTML comes from the `hr` margin rule in `extra.css`.
+
+```markdown
+---
+
+
+Next paragraph here.
+```
+
 ---
 
 ## 4. Tone by section

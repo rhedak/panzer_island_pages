@@ -37,4 +37,5 @@ Also available on [Royal Road](https://www.royalroad.com/fiction/176303/panzer-i
 
 ---
 
+
 *Chapter illustrations are generated with Google Gemini.*

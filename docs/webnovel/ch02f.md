@@ -27,6 +27,7 @@ I was almost sorry the ferry was fast.
 
 ---
 
+
 The terminal was a low building at the harbor's edge: ticket windows on the south side, covered waiting area on the north, bags and equipment stacked against every wall. A charter vessel and two water taxis were at the pier alongside us. The dock crew worked quickly, with the practiced indifference of people for whom arrivals are not events. Passengers crowded the gangway, families with too much luggage, a school group in matching jackets, a man with two dogs who had opinions about the disembarkation process.
 
 I found the transport office at the north end of the terminal. The man behind the window had the particular economy of someone who has answered the same question enough times that the answer runs ahead of it.
@@ -42,6 +43,7 @@ It was ten past eleven. I had left my equipment cases with terminal storage. I h
 He tilted his head at the window. "Town."
 
 ---
+
 
 I walked north from the terminal along the harbor road. The salt smell was clean and direct, no complication underneath it, the offshore wind coming in steady from the south. The market square was two blocks from the terminal: a dozen stalls, vegetables and fish, and a baker with a queue eight people long. A child of perhaps five was engaged in a sustained negotiation with an adult about the terms under which a pastry might be purchased. The adult was losing.
 
@@ -59,6 +61,7 @@ I turned back at the next corner and walked south.
 
 ---
 
+
 I turned off the main road where a footpath sign pointed toward the coast: thirty minutes before I needed to double back for the shuttle. The path dropped toward the southern shelf, a loose gravel track that widened as it descended, the harbor rising behind me on the hill and the research installation becoming visible in the middle distance as the line of sight cleared the scrub.
 
 The slope flattened as it approached the shelf. From this angle the installation read as six structures rather than a single facility: the main building to the north, four secondary structures arranged around it in a pattern that was not symmetrical and had clearly been built in stages. I could read the difference in weathering from here. Someone had added to it over time. The original footprint was oldest.
@@ -70,6 +73,7 @@ The path rejoined the coast road near the aviation facility: a hangar structure,
 I did not stop. I noticed.
 
 ---
+
 
 The research complex occupied the top of the coastal shelf: six main structures linked by covered walkways, a vehicle yard, a perimeter that read as security-functional rather than military. I had expected a harder boundary. The guards at the gate were thorough, not aggressive. They checked my credentials with the efficiency of people who have done this often and found discrepancies rarely.
 
@@ -87,6 +91,7 @@ He walked me to the third-level corridor and left without ceremony. The hallway 
 
 ---
 
+
 The lab was larger than I had pictured from the spec: three long workstations, equipment bays on the east wall, a secondary terminal alcove in the northeast corner. Everything powered down except the primary terminal, which had been left in standby. The spec had mentioned a co-PI on the architecture side; I could see from the workspace layout which station was his. The organization of it told me something about how he worked, which told me something about how we would disagree, which I filed without pursuing.
 
 I opened the architecture files and began to read.
@@ -103,6 +108,7 @@ At some point the light in the alcove windows had changed.
 
 ---
 
+
 The east wing looked out over the coast road and the harbor below. The town was lit now, the grid of it spreading from the waterfront up the slope, the market square dark, the school dark, the residential streets visible as lines of warm light. The ferry was back at the pier: the last crossing from the outer islands, the running lights clear in the early dark.
 
 I stood at the window longer than I had meant to.
@@ -117,9 +123,11 @@ The phase four implementation note was still open.
 
 ---
 
+
 [Previous Chapter: Assembly](ch02.md) | [Next Chapter: Oracle](ch03.md)
 
 ---
+
 
 *Author's note: Panzer Island is also a strategy game available on
 [Steam](https://store.steampowered.com/app/4757690/Panzer_Island/),

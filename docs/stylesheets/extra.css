@@ -240,6 +240,11 @@
   display: block;
 }
 
+/* Scene-break spacing: give <hr> generous breathing room above and below */
+.md-typeset hr {
+  margin: 2.5em 0;
+}
+
 /* Webnovel chapter illustration: full article width with breathing room */
 img.chapter-illustration {
   width: 100%;
