@@ -31,7 +31,7 @@ before. The truth builds one layer at a time, and each layer reframes the last.
 
 New chapters are published every weekday (Monday to Friday).
 
-Also available on [Royal Road](https://www.royalroad.com/fiction/176303/panzer-island) and [Scribble Hub](https://www.scribblehub.com/series/2408903/panzer-island/).
+Also available on [Royal Road](https://www.royalroad.com/fiction/176303/panzer-island).
 
 [Read Chapter 1: First Steps](ch01.md){ .md-button .md-button--primary }
 
