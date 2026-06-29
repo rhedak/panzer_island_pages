@@ -29,7 +29,7 @@ Erika designed the system at the heart of this. She does not remember what she d
 present-day investigation and flashback chapters that reveal what the island looked like
 before. The truth builds one layer at a time, and each layer reframes the last.
 
-Arc 1 (Chapters 1-5) is now complete and free to read. Arc 2 is in production.
+New chapters are published every weekday (Monday to Friday).
 
 Also available on [Royal Road](https://www.royalroad.com/fiction/176303/panzer-island) and [Scribble Hub](https://www.scribblehub.com/series/2408903/panzer-island/).
 
