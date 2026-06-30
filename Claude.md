@@ -66,8 +66,10 @@ needs `title` and `description` front matter.
 
 ## Webnovel
 
-A free prose adaptation of the Panzer Island story is in development as a cross-promotion,
-targeting readers who have not played the game. Design document: `webnovel/design.md`.
+The published webnovel pages live at `docs/webnovel/`. Drafts and design docs are
+in the sister repo `../panzer_island_webnovel` (private). Publication is a manual
+process: copy the polished draft from that repo to `docs/webnovel/` here, add front
+matter, the MkDocs nav entry, and the author's note footer.
 
 ### Chapter navigation
 

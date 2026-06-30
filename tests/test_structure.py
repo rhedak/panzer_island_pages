@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 import re
-from pathlib import Path
-
-import yaml
 
 from tests.helpers import (
     FOOTER_MARKER,
     PUBLISHED_DIR,
     REPO_ROOT,
-    WEBNOVEL_DIR,
     parse_front_matter,
-    published_filename_to_draft,
 )
 
 
@@ -140,39 +135,6 @@ def test_image_references_exist():
 
 
 # ---------------------------------------------------------------------------
-# Draft filename convention
-# ---------------------------------------------------------------------------
-
-def test_draft_filenames_follow_convention():
-    """All draft chapter files must match ch[0-9]+[_name].md pattern."""
-    bad = []
-    for f in sorted(WEBNOVEL_DIR.glob("*.md")):
-        if "_notes" in f.name or f.name.endswith("_old.md") or re.search(r"_v\d+\.md$", f.name):
-            continue
-        if not re.match(r"ch\d+[a-z]?_[a-z_]+\.md$", f.name):
-            bad.append(f.name)
-    assert not bad, "Draft files not matching convention:\n" + "\n".join(bad)
-
-
-# ---------------------------------------------------------------------------
-# Draft files should not have footers
-# ---------------------------------------------------------------------------
-
-def test_drafts_have_no_footer():
-    """Draft chapter files should not contain the author's note footer."""
-    has_footer = []
-    for f in sorted(WEBNOVEL_DIR.glob("*.md")):
-        if "_notes" in f.name:
-            continue
-        text = f.read_text(encoding="utf-8")
-        if FOOTER_MARKER in text:
-            has_footer.append(f.name)
-    assert not has_footer, "Draft files with author's note footer (should be added at publish time):\n" + "\n".join(
-        has_footer
-    )
-
-
-# ---------------------------------------------------------------------------
 # Published chapter date line
 # ---------------------------------------------------------------------------
 
@@ -239,39 +201,6 @@ def test_published_chapters_have_illustration():
     assert not missing, "Published chapters missing illustration:\n" + "\n".join(missing)
 
 
-# ---------------------------------------------------------------------------
-# Section divider count consistency (draft vs published)
-# ---------------------------------------------------------------------------
 
-def test_section_divider_count():
-    """Published chapters must preserve draft's --- dividers plus 3 for front matter and footer.
 
-    Drafts use --- as section dividers. Published versions add:
-    - front matter opening ---
-    - front matter closing ---
-    - footer divider ---
-    So published count should equal draft count + 3.
-    """
-    mismatches = []
-    for pub in sorted(PUBLISHED_DIR.glob("ch*.md")):
-        if pub.name == "index.md":
-            continue
-        draft_name = published_filename_to_draft(pub.name)
-        if draft_name is None:
-            continue
-        draft_path = WEBNOVEL_DIR / draft_name
-        if not draft_path.exists():
-            continue
 
-        pub_text = pub.read_text(encoding="utf-8")
-        draft_text = draft_path.read_text(encoding="utf-8")
-
-        pub_count = len(re.findall(r"^---$", pub_text, re.MULTILINE))
-        draft_count = len(re.findall(r"^---$", draft_text, re.MULTILINE))
-
-        expected = draft_count + 4
-        if pub_count != expected:
-            mismatches.append(
-                f"{pub.name}: published={pub_count}, draft={draft_count}, expected={expected}"
-            )
-    assert not mismatches, "Section divider count mismatch:\n" + "\n".join(mismatches)

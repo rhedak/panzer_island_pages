@@ -9,7 +9,6 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
-WEBNOVEL_DIR = REPO_ROOT / "webnovel" / "chapters"
 PUBLISHED_DIR = DOCS_DIR / "webnovel"
 
 FOOTER_MARKER = "Author's note: Panzer Island is also a strategy game"
@@ -92,44 +91,3 @@ def strip_structural_elements(text: str) -> str:
     result = re.sub(r"\n{3,}", "\n\n", result)
     return result.strip()
 
-
-def draft_filename_to_published(filename: str) -> str | None:
-    """Map a draft chapter filename to its published counterpart.
-
-    e.g. ch01_first_steps.md -> ch01.md
-         ch02f_population.md -> ch02f.md
-    """
-    stem = Path(filename).stem
-    # Extract ch number + optional letter suffix
-    m = re.match(r"(ch\d+[a-z]?)_", stem)
-    if m:
-        return m.group(1) + ".md"
-    return None
-
-
-def published_filename_to_draft(filename: str) -> str | None:
-    """Map a published chapter filename to its draft counterpart.
-
-    e.g. ch01.md -> ch01_first_steps.md (looks up webnovel/chapters/)
-    """
-    stem = Path(filename).stem  # e.g. "ch01"
-    if not re.match(r"ch\d+[a-z]?$", stem):
-        return None
-    # Find matching draft file, preferring canonical over reference variants
-    candidates = sorted(
-        f
-        for f in WEBNOVEL_DIR.glob(f"{stem}_*.md")
-        if "_notes" not in f.name
-    )
-    # Prefer the shortest stem (canonical file, no _old _v3 etc)
-    canonical = [f for f in candidates if not re.search(r"_(old|v\d+)$", f.stem)]
-    if canonical:
-        return canonical[0].name
-    if candidates:
-        return candidates[0].name
-    return None
-
-
-def word_count(text: str) -> int:
-    """Count words in prose text."""
-    return len(text.split())

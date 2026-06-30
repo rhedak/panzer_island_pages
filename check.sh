@@ -15,7 +15,7 @@ if ! uv run python sync_assets.py; then
 fi
 
 echo "Checking punctuation (em dashes, double hyphens)..."
-if ! bash check_punctuation.sh docs/webnovel webnovel/chapters; then
+if ! bash check_punctuation.sh docs/webnovel; then
     echo "  (banned punctuation found in prose text)"
     exit 1
 fi
