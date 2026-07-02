@@ -1,0 +1,1914 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A detailed account of where AI helped, where it did not, and the line between the two.">
+      
+      
+      
+        <link rel="canonical" href="https://rhedak.github.io/panzer_island_pages/blog/2026/06/13/how-generative-ai-supported-the-making-of-panzer-island/">
+      
+      
+        <link rel="prev" href="../site-launch-and-chapter-1-demo-status/">
+      
+      
+        <link rel="next" href="../../19/dev-log-2026-06-19/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/shortcut_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>How generative AI supported the making of Panzer Island - Panzer Island</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-generative-ai-supported-the-making-of-panzer-island" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Panzer Island" class="md-header__button md-logo" aria-label="Panzer Island" data-md-component="logo">
+      
+  <img src="../../../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Panzer Island
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How generative AI supported the making of Panzer Island
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../webnovel/" class="md-tabs__link">
+          
+  
+  
+  Webnovel
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../guides/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../story/" class="md-tabs__link">
+          
+  
+  
+  Story
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../support/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Support
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../credits/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Credits
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../press/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Press Kit
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Panzer Island" class="md-nav__button md-logo" aria-label="Panzer Island" data-md-component="logo">
+      
+  <img src="../../../../../assets/logo.png" alt="logo">
+
+    </a>
+    Panzer Island
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webnovel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webnovel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch02f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2F: Population
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Oracle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: The Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: The Crossing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Another Lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: The Boneyard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Dr. E.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Twenty-Three Names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: The Archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11: The Nest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch11f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11F: The Other PI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your Units
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/drones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/objectives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage Objectives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Tactics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/skill-builds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skill Builds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/reactive_turns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reactive Turns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Story
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Story
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../story/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../story/characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Characters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../press/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Press Kit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The philosophy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-ai-was-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where AI was used
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where AI was used">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-code-claude-as-a-programming-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Code: Claude as a programming assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-character-portraits-google-gemini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Character portraits: Google Gemini
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-what-i-did-not-use-ai-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. What I did not use AI for
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-document-driven-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design document driven development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subagent-playtest-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subagent playtest system
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this cost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The line
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="../../../../../assets/shortcut_icon.png" alt="Panzer Island Dev">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Panzer Island Dev
+                        
+                      </strong>
+                      <br>
+                      Developer updates
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-06-13 00:00:00+00:00" class="md-ellipsis">June 13, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              13 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="how-generative-ai-supported-the-making-of-panzer-island">How generative AI supported the making of Panzer Island<a class="headerlink" href="#how-generative-ai-supported-the-making-of-panzer-island" title="Permanent link">&para;</a></h1>
+<p>Panzer Island is a solo project. One developer. A full-length strategy game with a written narrative, three playable characters, a custom toolchain, and a campaign solver that can verify every stage is beatable before a build ships.</p>
+<p>I used generative AI throughout. This post describes exactly where, how much, and what I kept out of its hands.</p>
+<!-- more -->
+
+<hr />
+<h2 id="the-philosophy">The philosophy<a class="headerlink" href="#the-philosophy" title="Permanent link">&para;</a></h2>
+<p>The shortest version: human-driven, AI-assisted.</p>
+<p>Every design call, balance verdict, and story beat comes from me. Every merged change is one I validated by playing the game on hardware. AI is a power tool that compresses the gap between "I want to try X" and "X is in my hands." It does not decide what X should be.</p>
+<p>That distinction matters because the failure mode I was trying to avoid is not "AI wrote bad code." It is "AI made a decision I did not notice." Generators, solvers, and language models are all good at producing something that looks like an answer. The discipline is noticing when the answer does not actually fit, and doing the work to find one that does.</p>
+<hr />
+<h2 id="where-ai-was-used">Where AI was used<a class="headerlink" href="#where-ai-was-used" title="Permanent link">&para;</a></h2>
+<h3 id="1-code-claude-as-a-programming-assistant">1. Code: Claude as a programming assistant<a class="headerlink" href="#1-code-claude-as-a-programming-assistant" title="Permanent link">&para;</a></h3>
+<p>The largest share of AI involvement was Claude (Anthropic), Grok Build (xAI) and OpenCode Zen, as coding assistants throughout development. This covered:</p>
+<p><strong>Design Document Review.</strong> Before writing any code extensive design documents were created and passed to the AI for review. These include a master Game Design Document (GDD), a balancing document as well as various styleguides. For details see subsection Design Document driven development.</p>
+<p><strong>Tooling.</strong> The four Python tools that carry the most weight in this project were built with heavy AI assistance: the stage editor (Tkinter UI for placing terrain, drones, and objectives), the cutscene editor (locale-aware dialogue authoring), the balance editor (unit and drone growth schemas, XP budget), and the feasibility solver (a Python mirror of the live game engine that can verify whether a stage is clearable). These tools exist so a human can iterate fast. The design decisions they produce are still mine to make.</p>
+<p><strong>Refactors and parsers.</strong> Godot's GDScript is not a language with a long tail of Stack Overflow answers. When I needed to migrate the stage data format, restructure the save schema, or add a new drone behavior while keeping the Python solver in sync, AI handled the mechanical parts. I reviewed every change and ran the test suite.</p>
+<p><strong>Test scaffolding.</strong> The project ships with 400+ GDScript tests and 200+ Python solver tests. Writing test harnesses is work I would have cut corners on without assistance. Having a test suite that catches regressions at the unit level changed how freely I could iterate on the reactive turn engine.</p>
+<p><strong>Design discussions and subagent playtests.</strong> Some of the most useful interactions were not code at all. Describing a proposed mechanic and talking through its implications with a system that had read the whole codebase caught several problems before they became bugs. It is not the same as talking to another developer. It is useful in a different way. For that purpose I designed a subagent playtest system that involved an AI Agent playing the game in a "headless" environment (see subsection subagent playtest system)</p>
+<p>What Claude does not do: it does not balance the game. It does not decide which stages are fun, which story beats land, or whether the pacing of Chapter 1 is right. Those required playing the game on hardware, over and over, until the answer was obvious.</p>
+<h3 id="2-character-portraits-google-gemini">2. Character portraits: Google Gemini<a class="headerlink" href="#2-character-portraits-google-gemini" title="Permanent link">&para;</a></h3>
+<p>I cannot draw. The 196 character portrait images in the game (Erika, Katyusha, Nadeshiko, Maria, Wilhelm, Drona, and the greyscale alpha unit variants, each in nine emotional states) were generated with Google Gemini against a tightly specified prompt set.</p>
+<p>The prompts are documented in full at <code>docs/assets/portraits.md</code> in the game repository. Each character has a base prompt describing their visual identity in precise terms: hair color and style, clothing, color palette, posture, emotional register. Each emotional variant adds specific expression and body language tags. For example, Katyusha's "Angry" variant specifies "flat intense glare, furrowed brow, sharp eyes, tight pressed lips, arms raised, hands balled to fists," distinct from Maria's "Angry" which reads "intense red glow in eyes, sharp dangerous smirk, hand resting firmly on hip, tense authoritative stance." The difference in register matches the difference in character.</p>
+<p>The generation workflow was:
+1. Generate a full-body reference image first, to anchor the character's proportions and outfit.
+2. Use that image as a character reference at 60% strength on subsequent generation passes, to prevent outfit and hair drift between expressions.
+3. Post-process every output with Python tooling: bust crop to a consistent 55-65% framing, format conversion, batch rename.</p>
+<p>This is not "AI made the art." It is closer to: I wrote a detailed brief, iterated on the brief until the output matched my intent, and then automated the production pipeline. The characters look like who they are supposed to be because the prompts specify exactly what that means. Getting there took revision.</p>
+<p>A few things that did not work and required explicit solutions: maintaining consistent skin tone across emotional variants (required explicit palette specification), keeping Drona's red-to-pink gradient hair stable (required "Vivid red roots bleeding into pink tips" in every prompt), and preventing the alpha unit greyscale variants from losing the red targeting reticle detail (required explicit emphasis). Each problem had a specific fix; none had a general fix.</p>
+<h3 id="3-what-i-did-not-use-ai-for">3. What I did not use AI for<a class="headerlink" href="#3-what-i-did-not-use-ai-for" title="Permanent link">&para;</a></h3>
+<p>Three areas where AI was explicitly not used, and why.</p>
+<p><strong>In-game sprites.</strong> Every unit sprite (Katyusha, Nadeshiko, Maria, and their animated frames), every drone sprite, every terrain tile, every UI icon, every prop, the world map, the boot splash, and the studio logo are generated programmatically with Python and matplotlib. Reproducibly, from source code, via <code>./generate.sh</code>. Note AI helped draft the code for the assets and I refined it.</p>
+<p>This was a deliberate choice. Direct AI image generation produces outputs I cannot fully control or regenerate deterministically. Programmatic generation produces outputs I can version-control, tweak pixel by pixel, and rebuild from scratch if the spec changes. When Katyusha's color palette needed to shift, I changed two constants in <code>palette.py</code> and regenerated. When a new drone type was added, I wrote the drawing code for it. The art is simple, deliberately GBA-era in aesthetic. That constraint and the code-driven approach fit each other.</p>
+<p><strong>Sound effects.</strong> All SFX were generated by a custom Python <code>wave</code>-package synthesizer from JSON parameter files. The parameter files were designed using sfxr-compatible browser tools, then saved as data. The synthesizer is hand-written. No AI audio generation was used. The output is retro and intentionally lo-fi. Note that the AI helped draft the code for the sfx system and I refined it.</p>
+<p><strong>Music.</strong> The 11 in-game chiptune tracks are licensed Creative Commons compositions by Patrick de Arteaga. Human-composed, not generated.</p>
+<p><strong>Story and narrative.</strong> The narrative, the characters, the stage-by-stage plot beats, the locked cutscene exchanges, and the structure of the six-chapter arc are mine. This was the area where I was most careful not to let AI become the author. AI helped with prose checking (does this line match the character's voice profile? does this paragraph contain an em dash?) but not with deciding what the story says or what the characters mean to each other. The game has things it is trying to say. Those things came from me.</p>
+<hr />
+<h3 id="design-document-driven-development">Design document driven development<a class="headerlink" href="#design-document-driven-development" title="Permanent link">&para;</a></h3>
+<p>Before a line of code was written, the design existed as documents.</p>
+<p>The process was: write a detailed design document, pass it to an AI coding assistant for review, then implement. The key documents included the Game Design Document (GDD) and the story document, alongside several supporting specifications. Both were completed to a high level of detail before development started: the GDD specifies the reactive turn system, all unit stats and skill trees, enemy drone types and behaviors, stage structure, the business model, and platform targets. The story document specifies all six named characters, the full six-chapter narrative arc with per-stage plot beats, the character voice system (how each character speaks, what sentence shapes they use, what they are and are not allowed to say), and dozens of locked dialogue exchanges that cannot be changed without cascading consequences.</p>
+<p>Passing this material to an AI before implementation had a specific effect: the design had to be unambiguous to survive review. Vague designs produce vague AI questions that expose the vagueness. A rule like "drones react when you move" turned into a concrete question about edge cases (what counts as a reaction, what happens when multiple drones react to the same step, how pursuit interacts with passive fire) that I had to resolve before the first commit. The process of making the design legible to an AI is largely the process of making it legible to a developer, including a future version of yourself.</p>
+<p>The styleguides followed the same pattern. The English writer's styleguide for the game specifies proper noun spellings, American vs. British dialect preference, the ellipsis format, the em dash ban, exclamation mark allocation by character, contraction frequency by character, and sentence shape profiles for each of the six speaking characters. It was written before the cutscenes were authored, and reviewed by AI before any dialogue was written. When a new cutscene line was drafted, checking it against the styleguide was a first-pass review the AI could run mechanically, flagging a misplaced exclamation mark or a Katyusha line with too many contractions before a human read it.</p>
+<p>The documents that were in place before development began, with a brief summary of each:</p>
+<p><strong>Game Design Document (GDD).</strong> The primary specification. Covers the reactive turn system rules in full, all three unit stat blocks and skill trees, every drone type and its exact behavior, sector and chapter structure, objective types, the business model, and platform targets. The most intensively AI-reviewed document: the reactive fire rules in particular required several passes to resolve edge cases around multi-drone reaction order and the interaction between pursuit and passive fire, all before the first commit.</p>
+<p><strong>story.md.</strong> Narrative specification. Defines all six named characters with biographical backgrounds and relationships; the full six-chapter arc with per-stage plot beats; per-character voice profiles covering sentence shape, vocabulary constraints, and contraction frequency; and dozens of locked dialogue exchanges. Locked means that specific line cannot be rewritten without cascading consequences in adjacent scenes. AI review of this document before cutscene authoring surfaced several timeline continuity gaps that were resolved in the document, not in the code.</p>
+<p><strong>visual_styleguide.md.</strong> Visual identity per chapter. Assigns a palette family, terrain theme (clean, tainted, dead, or chapter-specific), composition vocabulary, and prop leitmotifs to each chapter. Cross-chapter rules include: every stage must contain navigable water, because Maria is a ship and removing water removes her from that stage, which is a mechanical event requiring a narrative justification; each indoor stage has exactly one saturated color point against an otherwise desaturated palette; and the only greyscale elements on screen are Alpha-unit appearances, making Alpha sightings a recognizable visual beat without dialogue. These rules were written and reviewed before any terrain sprites were generated.</p>
+<p><strong>tech_stack.md.</strong> Engine selection and project structure. Evaluates Godot 4 against the project's requirements (2D pixel art, anime portrait cutscenes, one-click export to Steam and Android, solo developer overhead) and defines the folder layout, key script responsibilities, and Python toolchain organization. Writing this early gave the AI assistant a precise map of where each new file belonged, rather than allowing structure to accumulate ad-hoc across the project.</p>
+<p><strong>balancing.md.</strong> Balance mathematics and drone placement contracts. Derives a two-factor growth system where all unit attack rates and drone HP rates share one global growth factor, and all drone attack, unit defense, and unit HP rates share a second. This algebraic coupling guarantees that effectiveness ratios are preserved at all levels, preventing the stat inflation that typically appears in long strategy campaigns. The document also specifies placement contracts for the three support drone types introduced in Chapter 3 (Spotter, Relay Node, Repair Drone), stating exactly what decision each one must force on the player for its placement to satisfy the design intent.</p>
+<p><strong>chapter_stage_design.md.</strong> Stage authoring checklist. Encodes the canonical 10-stage chapter structure, required objective type mix across a chapter, drone count escalation targets, anti-ground and anti-air coverage requirements per sector, tutorial text obligations for new mechanics, and a named catalog of common drafting errors collected from review passes. This document functions as the verification contract that every chapter is audited against before the feasibility solver is run.</p>
+<p><strong>English writer's styleguide (styleguide_en.md).</strong> Described in the paragraph above. The voice system for all six speaking characters, written before cutscene authoring began.</p>
+<p>The constraint this creates is real: you cannot write design documents of this depth quickly. The GDD took time to write and more time to get to a state where review would produce useful feedback. The payoff is that the implementation phase had very few "what does this mechanic actually do?" moments, because those questions were resolved in the documents.</p>
+<hr />
+<h3 id="subagent-playtest-system">Subagent playtest system<a class="headerlink" href="#subagent-playtest-system" title="Permanent link">&para;</a></h3>
+<p>Every stage in Panzer Island needs to be verified as clearable and worth playing before it ships. For a solo developer without a QA team, neither condition is easy to confirm alone. The playtest system has two parts that work in sequence.</p>
+<p><strong>Part 1: the feasibility solver.</strong></p>
+<p>The solver is a parallel implementation of the live game engine in pure Python. Combat math, drone reactions, step-by-step movement, terrain, limit break triggers, XP accrual, level-ups, and stage objectives are all re-implemented so the solver can simulate states without running Godot. The full Chapter 1 campaign (10 stages) runs in roughly one minute.</p>
+<p>The agent inside the solver is a greedy priority-ladder planner. It operates on a ranked list of move types: a valuable limit break kill is always preferred over a free kill, which is always preferred over a bait move, and so on down the ladder. At each step the planner generates all candidates for the highest-priority viable move type, picks the best by a tiebreaker (acting unit's HP band, then team minimum HP), and commits. The planner is deterministic given a fixed stage and unit state.</p>
+<p>When the solver clears a stage it produces a JSON action log that the live engine can replay as a full visual playthrough inside Godot. When it fails, the failure report is diagnostic data: a stage the solver cannot path through in 60 seconds per sector is almost certainly too hard. The difficulty target is a stage where the solver needs several attempts and produces a solution that looks like it required genuine priority management.</p>
+<p>Every time a gameplay mechanic changes in GDScript, the matching Python module must be updated in the same commit. Drift between the two implementations is the only real failure mode: if the solver's model of Iron Curtain diverges from the live engine's model, it finds "solutions" that do not work in the game. A test suite of 200+ Python solver tests checks mechanical parity on each commit.</p>
+<p><strong>Part 2: the AI subagent playtest.</strong></p>
+<p>The solver answers "is this stage clearable?" It does not answer "is the tutorial text accurate?", "does the story beat land?", "is the difficulty progression appropriate?", or "does anything feel wrong as a player experience?" For those questions, the second part of the system uses an AI language model as a structured playtester.</p>
+<p>The briefing process for a subagent playtest is documented in the game repository as a step-by-step protocol. The agent receives:</p>
+<ol>
+<li>A mechanics reference document covering the reactive turn system, all unit stats, all drone types and behaviors, terrain codes, combat formulas, objective types, and cutscene slot order.</li>
+<li>A story-so-far summary covering every plot beat the player has accumulated up to the stage being tested.</li>
+<li>The solver's carry-state JSON from the previous stage, establishing the exact unit levels, XP, and skill choices the player would have at this point in a real playthrough.</li>
+<li>The live stage files read directly from the repository: the grid, drone roster, objectives, tutorial text, and all cutscene files.</li>
+<li>The solver's action log for this stage, if one exists.</li>
+</ol>
+<p>The agent is then asked to play the full experience in order: cutscenes, then gameplay step by step with HP tracking and explicit reasoning, then post-stage cutscenes. Feedback is structured into three categories: mechanics and level design, narrative, and overall verdict.</p>
+<p>The solver's action log is included because it creates a specific cross-check: does the tutorial text describe the tactic the solver found? If the tutorial says "center the Broadside on the artillery cluster," does the solver's action log show a Broadside fired at that cell? A discrepancy is not automatically a bug. The greedy planner may find a valid clear that differs from the described approach. But if the tactic the tutorial describes does not work at all, or works only in a way that contradicts the explanation, that is a flag.</p>
+<p>After the subagent returns its feedback, the workflow is: apply all text and logic fixes autonomously, hold for human confirmation on anything that touches drone roster, map layout, unit stats, or stage structure, and iterate until the stage gets a clean pass. Then rerun the solver as a final sanity check, confirm all changes with a human, and mark the stage closed.</p>
+<p>The system does not replace playing the game. The solver finds clearable paths; it does not find enjoyable ones. The subagent notices mismatches between what the text says and what the mechanics do; it cannot tell you whether a stage feels tense or satisfying. Human playtesting on hardware remains the final bar. The two-part system narrows the surface area that hardware playtesting has to cover.</p>
+<hr />
+<h2 id="what-this-cost">What this cost<a class="headerlink" href="#what-this-cost" title="Permanent link">&para;</a></h2>
+<p>Transparency requires acknowledging the tradeoffs.</p>
+<p>The portrait generation workflow produced 196 images that I am broadly happy with, but they required significant iteration to get right. AI image generation is not faster than commissioning an artist if you care about specificity. It is faster than learning to draw from scratch, which was the relevant comparison for this project.</p>
+<p>The AI-assisted tooling saved an amount of development time I would estimate at several weeks. The tradeoff is that I sometimes merged code I understood at a high level but had not written line by line. The test suite caught most of the problems that created. A few it did not catch required careful debugging.</p>
+<p>The programmatic sprite generation is slower and more limited than an AI image pipeline for producing visual variety. The tradeoff is full control and reproducibility. For a solo project that needs to stay maintainable, that was the right call.</p>
+<hr />
+<h2 id="the-line">The line<a class="headerlink" href="#the-line" title="Permanent link">&para;</a></h2>
+<p>If I had to state the principle in a single sentence: AI generates candidates; I make decisions.</p>
+<p>The reactive turn system, the three-unit dynamic, the sector structure, the skill trees, the story of a scientist who caused a catastrophe and has spent a long time not looking at it directly. None of those came from a generator. They came from thinking about what kind of game I wanted to play, and not stopping until the thing in my hands matched it.</p>
+<p>The tools helped me get there faster. The getting there was mine to do.</p>
+<p>Don't like the use of AI for game art? Read <a href="../../21/ai-art-the-latest-end-of-civilization/">my unfiltered take</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

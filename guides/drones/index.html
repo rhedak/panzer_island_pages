@@ -1,0 +1,2558 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Stats, behaviors, counters, and tactical notes for every drone type in Panzer Island.">
+      
+      
+      
+        <link rel="canonical" href="https://rhedak.github.io/panzer_island_pages/guides/drones/">
+      
+      
+        <link rel="prev" href="../characters/">
+      
+      
+        <link rel="next" href="../objectives/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/shortcut_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Drone reference - Panzer Island</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#drone-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Panzer Island" class="md-header__button md-logo" aria-label="Panzer Island" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Panzer Island
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Drone reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../webnovel/" class="md-tabs__link">
+          
+  
+  
+  Webnovel
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../story/" class="md-tabs__link">
+          
+  
+  
+  Story
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../support/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Support
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../credits/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Credits
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../press/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Press Kit
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Panzer Island" class="md-nav__button md-logo" aria-label="Panzer Island" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Panzer Island
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webnovel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webnovel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch02f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2F: Population
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Oracle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: The Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: The Crossing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Another Lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: The Boneyard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Dr. E.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Twenty-Three Names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: The Archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11: The Nest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webnovel/ch11f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11F: The Other PI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your Units
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drones
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-read-this-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to read this page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stationary-drones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stationary drones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stationary drones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guard-tower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guard tower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentinel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sentinel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artillery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artillery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pursuing-drones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pursuing drones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pursuing drones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patrol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patrol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interceptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interceptor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cruiser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cruiser
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-drones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support drones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support drones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relay-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relay node
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spotter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spotter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repair-drone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repair drone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rushers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rushers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rushers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detonator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detonator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objectives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage Objectives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Tactics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skill-builds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skill Builds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reactive_turns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reactive Turns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Story
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Story
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../story/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../story/characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Characters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../press/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Press Kit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-read-this-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to read this page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stationary-drones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stationary drones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stationary drones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guard-tower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guard tower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentinel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sentinel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artillery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artillery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pursuing-drones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pursuing drones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pursuing drones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patrol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patrol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interceptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interceptor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cruiser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cruiser
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-drones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support drones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support drones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relay-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relay node
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spotter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spotter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repair-drone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repair drone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rushers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rushers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rushers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detonator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detonator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="drone-reference">Drone reference<a class="headerlink" href="#drone-reference" title="Permanent link">&para;</a></h1>
+<p>Drones are autonomous defense units that patrol and protect sectors across Panzer Island. All stat values listed here are base level 1. Stats scale linearly as drones level up with the campaign, but the ratios between drones stay constant: a guard tower is always roughly as dangerous relative to your units at level 20 as it is at level 1.</p>
+<hr />
+<h2 id="how-to-read-this-page">How to read this page<a class="headerlink" href="#how-to-read-this-page" title="Permanent link">&para;</a></h2>
+<p><strong>HP, Attack, Range</strong> are base level 1 values from the game data.</p>
+<p><strong>Detection band.</strong> Pursuing drones react when a unit enters a zone one cell wider than their attack range. A patrol with attack range 2 has a detection band of 3: it fires at range 2 and pursues when a unit enters range 3. Stationary drones (guard tower, sentinel, artillery) fire when a unit enters their attack range directly; they do not have a wider detection band.</p>
+<p><strong>Pursues.</strong> When a pursuing drone detects a unit, it abandons its route and moves toward the nearest unit each turn until destroyed. Pursuit is permanent once triggered.</p>
+<p><strong>Typed variants.</strong> Many drone types come in anti-ground (<code>_ag</code>) and anti-air (<code>_aa</code>) variants. Their stats are identical to the base type. The only difference is targeting: <code>_ag</code> variants only fire at surface units (Katyusha, Maria), and <code>_aa</code> variants only fire at air units (Nadeshiko). Unless otherwise noted, each entry below applies to all three variants of that type.</p>
+<p><strong>Sprite outline and badge colors.</strong> Each sprite below shows the drone exactly as it appears in the game's inspect panel, including the small target-type badge in the lower-right corner. The colors have fixed meanings throughout the game:</p>
+<ul>
+<li><strong>Red</strong> outline + <img alt="red diamond badge" class="target-badge" src="../../assets/ui/icon_target_all.png" />: fires at all unit types (base variant)</li>
+<li><strong>Orange</strong> outline + <img alt="orange downward badge" class="target-badge" src="../../assets/ui/icon_target_ag.png" />: anti-ground only (<code>_ag</code>)</li>
+<li><strong>Pink</strong> outline + <img alt="pink upward badge" class="target-badge" src="../../assets/ui/icon_target_aa.png" />: anti-air only (<code>_aa</code>)</li>
+</ul>
+<p>Support drones (relay node, spotter, repair drone) have no badge because they do not attack.</p>
+<hr />
+<div class="drone-level-selector">
+  <label for="drone-level">Drone level: <strong id="drone-level-display">1</strong></label>
+  <input type="range" id="drone-level" min="1" max="100" value="1" step="1">
+</div>
+
+<p>HP and Attack update to match the selected level. Range and movement type never scale.</p>
+<hr />
+<h2 id="stationary-drones">Stationary drones<a class="headerlink" href="#stationary-drones" title="Permanent link">&para;</a></h2>
+<p>Stationary drones do not move. They fire at any unit that enters their attack range and do not pursue.</p>
+<h3 id="guard-tower">Guard tower<a class="headerlink" href="#guard-tower" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Guard Tower" class="drone-sprite" src="../../assets/drones/guard_tower_icon.png" /></td>
+<td style="text-align: center;"><img alt="Ground Guard Tower" class="drone-sprite" src="../../assets/drones/guard_tower_ag_icon.png" /></td>
+<td style="text-align: center;"><img alt="Sky Guard Tower" class="drone-sprite" src="../../assets/drones/guard_tower_aa_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Guard Tower</td>
+<td style="text-align: center;">Ground Guard Tower</td>
+<td style="text-align: center;">Sky Guard Tower</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="50" data-rate="5.5">50</span></td>
+<td><span class="drone-stat" data-base="20" data-rate="2.2">20</span></td>
+<td>3</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Fires immediately at any unit that enters or acts within range 3. No charge delay. The most common drone in the game.</p>
+<p><strong>Counter.</strong> Maria (range 4) can engage a guard tower from outside its range. Katyusha absorbs the hit well and can turn a guard tower's shot back with Iron Curtain active.</p>
+<p><strong>Watch out for.</strong> Guard towers with overlapping ranges are placed frequently. Moving through one tower's range often puts you inside a second one's range at the same time. The route preview shows cumulative hits from all drones; check the full route before committing, not just the first dangerous cell.</p>
+<p><em>Typed variants: Ground Guard Tower (<code>_ag</code>) fires at surface units only. Sky Guard Tower (<code>_aa</code>) fires at air units only.</em></p>
+<hr />
+<h3 id="sentinel">Sentinel<a class="headerlink" href="#sentinel" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Sentinel" class="drone-sprite" src="../../assets/drones/sentinel_icon.png" /></td>
+<td style="text-align: center;"><img alt="Ground Sentinel" class="drone-sprite" src="../../assets/drones/sentinel_ag_icon.png" /></td>
+<td style="text-align: center;"><img alt="Sky Sentinel" class="drone-sprite" src="../../assets/drones/sentinel_aa_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Sentinel</td>
+<td style="text-align: center;">Ground Sentinel</td>
+<td style="text-align: center;">Sky Sentinel</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="55" data-rate="6.05">55</span></td>
+<td><span class="drone-stat" data-base="21" data-rate="2.31">21</span></td>
+<td>2</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Dormant until activated. A sentinel activates when any drone within its detection zone fires. Once active it fires at any unit in range 2 for the remainder of the sector.</p>
+<p><strong>Counter.</strong> Katyusha absorbs sentinel fire well. Maria can reach range-2 sentinels from range 4 if there is water access. Nadeshiko can snipe an isolated sentinel before triggering the adjacent drones that would wake it.</p>
+<p><strong>Watch out for.</strong> Moving through a guard tower's range to reach a target can activate a sentinel nearby that you have not accounted for. Before engaging a cluster, check whether any sentinels sit within range of the drones you plan to trigger. The chain reaction can add unexpected hits to an otherwise clean route.</p>
+<p><em>Typed variants: Ground Sentinel (<code>_ag</code>) activates via surface-targeting fire only. Sky Sentinel (<code>_aa</code>) activates via air-targeting fire only.</em></p>
+<hr />
+<h3 id="artillery">Artillery<a class="headerlink" href="#artillery" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Artillery" class="drone-sprite" src="../../assets/drones/artillery_icon.png" /></td>
+<td style="text-align: center;"><img alt="Howitzer" class="drone-sprite" src="../../assets/drones/artillery_ag_icon.png" /></td>
+<td style="text-align: center;"><img alt="Flak Battery" class="drone-sprite" src="../../assets/drones/artillery_aa_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Artillery</td>
+<td style="text-align: center;">Howitzer</td>
+<td style="text-align: center;">Flak Battery</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="60" data-rate="6.6">60</span></td>
+<td><span class="drone-stat" data-base="19" data-rate="2.09">19</span></td>
+<td>4</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Detects units at range 5 (detection band). Does not fire immediately: it charges for one player action, then fires at range 4 on the next action. The shot fires at your unit's position during that next action, not where they were when first detected.</p>
+<p><strong>Counter.</strong> Nadeshiko can approach from an unexpected angle by flying over terrain, and can eliminate an artillery drone in one Storm Run pass. The practical approach for other units: bait the charge with a short move, then move out of range before the next action.</p>
+<p><strong>Watch out for.</strong> The shot resolves on your next action after the charge, not at the end of the turn. Moving into range to attack something else and then taking a second action while still in range will take the hit. Clear artillery range before committing to further actions in its zone, not after.</p>
+<p><em>Typed variants: Howitzer (<code>_ag</code>) fires at surface units only. Flak Battery (<code>_aa</code>) fires at air units only.</em></p>
+<hr />
+<h2 id="pursuing-drones">Pursuing drones<a class="headerlink" href="#pursuing-drones" title="Permanent link">&para;</a></h2>
+<p>Pursuing drones abandon their route and close distance once they detect a unit. They continue pursuing until destroyed.</p>
+<h3 id="patrol">Patrol<a class="headerlink" href="#patrol" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Patrol" class="drone-sprite" src="../../assets/drones/patrol_icon.png" /></td>
+<td style="text-align: center;"><img alt="Ground Patrol" class="drone-sprite" src="../../assets/drones/patrol_ag_icon.png" /></td>
+<td style="text-align: center;"><img alt="Sky Patrol" class="drone-sprite" src="../../assets/drones/patrol_aa_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Patrol</td>
+<td style="text-align: center;">Ground Patrol</td>
+<td style="text-align: center;">Sky Patrol</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="45" data-rate="4.95">45</span></td>
+<td><span class="drone-stat" data-base="19" data-rate="2.09">19</span></td>
+<td>2</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Follows a fixed route when idle. Detects units at range 3 (detection band). Once alerted, pursues the nearest unit and fires when within range 2.</p>
+<p><strong>Counter.</strong> The most straightforward drone to engage. Any unit can handle a patrol cleanly at close range. Maria can fire from range 3 before it closes in.</p>
+<p><strong>Watch out for.</strong> Once alerted a patrol does not stand still. Plan where it will be on your next action, not where it is now. A patrol that was at medium distance when you moved can be at point-blank range by your next action.</p>
+<p><em>Typed variants: Ground Patrol (<code>_ag</code>) targets surface units only. Sky Patrol (<code>_aa</code>) targets air units only.</em></p>
+<hr />
+<h3 id="interceptor">Interceptor<a class="headerlink" href="#interceptor" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Interceptor" class="drone-sprite" src="../../assets/drones/interceptor_icon.png" /></td>
+<td style="text-align: center;"><img alt="Bomber" class="drone-sprite" src="../../assets/drones/interceptor_ag_icon.png" /></td>
+<td style="text-align: center;"><img alt="Flak Escort" class="drone-sprite" src="../../assets/drones/interceptor_aa_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Interceptor</td>
+<td style="text-align: center;">Bomber</td>
+<td style="text-align: center;">Flak Escort</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="50" data-rate="5.5">50</span></td>
+<td><span class="drone-stat" data-base="23" data-rate="2.53">23</span></td>
+<td>3</td>
+<td>Air</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Flies over all terrain, including water, mountains, and forest. Detects units at range 4 (detection band). Once alerted, closes distance aggressively and fires when within range 3. Carries the highest base attack of any standard pursuing drone.</p>
+<p><strong>Counter.</strong> Katyusha. Nadeshiko (10 defense) takes the most damage from interceptors and should not absorb their fire. Katyusha (13 defense, 150 HP) handles interceptors well, and an Iron Curtain counter-attack can kill or severely damage an interceptor in one hit.</p>
+<p><strong>Watch out for.</strong> Interceptors ignore terrain. A patrol is blocked by mountains and water; an interceptor is not. Do not assume Nadeshiko is safe on the far side of impassable terrain from an interceptor.</p>
+<p><em>Typed variants: Bomber (<code>_ag</code>) targets surface units only. Flak Escort (<code>_aa</code>) targets air units only.</em></p>
+<hr />
+<h3 id="cruiser">Cruiser<a class="headerlink" href="#cruiser" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Cruiser" class="drone-sprite" src="../../assets/drones/cruiser_icon.png" /></td>
+<td style="text-align: center;"><img alt="Gunboat" class="drone-sprite" src="../../assets/drones/cruiser_ag_icon.png" /></td>
+<td style="text-align: center;"><img alt="Flak Boat" class="drone-sprite" src="../../assets/drones/cruiser_aa_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Cruiser</td>
+<td style="text-align: center;">Gunboat</td>
+<td style="text-align: center;">Flak Boat</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="60" data-rate="6.6">60</span></td>
+<td><span class="drone-stat" data-base="22" data-rate="2.42">22</span></td>
+<td>4</td>
+<td>Water</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Water-only. Detects units at range 5 (detection band). Pursues any unit within the water network and fires when within range 4. The highest HP of any standard pursuing drone.</p>
+<p><strong>Counter.</strong> Maria is the natural counter, but cruiser range (4) exceeds Maria's attack range (3). Maria will take a hit any time she engages a cruiser directly. Use Broadside to suppress counterfire while clearing the sector, and budget Maria's HP accordingly for cruiser-heavy stages.</p>
+<p><strong>Watch out for.</strong> Katyusha and Nadeshiko are not targeted by cruisers unless they are on water tiles. Cruisers are almost exclusively Maria's problem, which makes any stage with multiple cruisers expensive for her HP pool. Do not let Maria take avoidable damage earlier in the stage if cruisers are present later.</p>
+<p><em>Typed variants: Gunboat (<code>_ag</code>) targets surface units only. Flak Boat (<code>_aa</code>) targets air units only.</em></p>
+<hr />
+<h2 id="support-drones">Support drones<a class="headerlink" href="#support-drones" title="Permanent link">&para;</a></h2>
+<p>Support drones do not attack directly. They amplify the threat of nearby attack drones. Treat them as priority targets when present.</p>
+<h3 id="relay-node">Relay node<a class="headerlink" href="#relay-node" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Relay Node" class="drone-sprite" src="../../assets/drones/relay_node_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Relay Node</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Buff radius</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="35" data-rate="3.85">35</span></td>
+<td>None</td>
+<td>4</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Extends the attack range of all attack drones within 4 cells by 1. The buff applies to every drone in radius simultaneously. When the relay node is destroyed, all buffed drones immediately revert to their normal attack range.</p>
+<p><strong>Counter.</strong> Any unit. The relay node has low HP and does not fight back. Killing it first is almost always correct.</p>
+<p><strong>Watch out for.</strong> If a guard tower or patrol seems to be hitting from an unusual distance, a relay node is nearby. The in-game range overlay reflects the buffed range, so the warning indicators look normal: the range diamond is simply wider than the type's base stats would suggest. When drones reach further than their type implies, scan for a relay node before routing.</p>
+<p><em>First introduced in Chapter 3.</em></p>
+<hr />
+<h3 id="spotter">Spotter<a class="headerlink" href="#spotter" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Spotter" class="drone-sprite" src="../../assets/drones/spotter_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Spotter</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Mark range</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="19" data-rate="2.09">19</span></td>
+<td>None</td>
+<td>5</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Marks any unit within range 5. A marked unit takes 50% more damage from all sources. The mark persists until the spotter is destroyed. Does not attack.</p>
+<p><strong>Counter.</strong> Any unit. The spotter is the most fragile drone in the game and dies in one hit from most attacks at any reasonable level.</p>
+<p><strong>Watch out for.</strong> Spotters are typically placed behind attack drones so you take hits approaching them. The route preview shows incoming damage correctly including the mark bonus, but it does not label the reason. If damage estimates look unexpectedly high, a spotter may have already marked your unit on a prior step. Destroy the spotter before engaging the cluster it covers whenever possible.</p>
+<p><em>First introduced in Chapter 3.</em></p>
+<hr />
+<h3 id="repair-drone">Repair drone<a class="headerlink" href="#repair-drone" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Repair Drone" class="drone-sprite" src="../../assets/drones/repair_drone_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Repair Drone</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>Heal per turn</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="26" data-rate="2.86">26</span></td>
+<td>None</td>
+<td>7% max HP</td>
+<td>Air</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Flies. Does not attack. Each player action, heals all attack drones within radius 5 by 7% of their maximum HP. Continues healing as long as it is alive and neighboring drones are damaged.</p>
+<p><strong>Counter.</strong> Kill it as soon as possible. The repair drone can undo several turns of progress in a few actions. It has low HP and does not fight back, but it flies and is often positioned behind the drones it is protecting.</p>
+<p><strong>Watch out for.</strong> Killing the frontline drones first to reach the repair drone gives it time to heal them. Look for a flanking route that reaches the repair drone directly, or use Nadeshiko's mobility to go around the frontline entirely.</p>
+<p><em>First introduced in Chapter 3.</em></p>
+<hr />
+<h2 id="rushers">Rushers<a class="headerlink" href="#rushers" title="Permanent link">&para;</a></h2>
+<p>Rushers are single-use drones that pursue the nearest unit and detonate on contact, dealing area damage. They die when they attack. Kill them before they close in.</p>
+<h3 id="detonator">Detonator<a class="headerlink" href="#detonator" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Detonator" class="drone-sprite" src="../../assets/drones/detonator_icon.png" /></td>
+<td style="text-align: center;"><img alt="Detonator (air)" class="drone-sprite" src="../../assets/drones/detonator_air_icon.png" /></td>
+<td style="text-align: center;"><img alt="Detonator (water)" class="drone-sprite" src="../../assets/drones/detonator_water_icon.png" /></td>
+</tr>
+<tr>
+<td style="text-align: center;">Detonator (Ground)</td>
+<td style="text-align: center;">Detonator (Air)</td>
+<td style="text-align: center;">Detonator (Water)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>HP</th>
+<th>Attack</th>
+<th>AoE radius</th>
+<th>Moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="drone-stat" data-base="20" data-rate="2.2">20</span></td>
+<td><span class="drone-stat" data-base="100" data-rate="11.0">100</span></td>
+<td>1</td>
+<td>Ground / Air / Water</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Behavior.</strong> Pursues the nearest unit immediately upon activation. On contact (range 1), detonates for the listed attack damage in a radius-1 area of effect, hitting all units caught in the blast. Destroyed on detonation. All three movement variants share the same stats.</p>
+<p><strong>Counter.</strong> Kill it in one action from a safe distance. Any unit can one-hit a detonator at low levels; check the HP before assuming a one-shot at higher levels. Maria can snipe from range 3; Katyusha and Nadeshiko from range 1 or 2. Do not leave it alive while handling other targets.</p>
+<p><strong>Watch out for.</strong> The attack value scales steeply: at level 10 the blast hits for 209, at level 20 for 309. A detonator that reaches your cluster while multiple units are nearby can end the sector at any campaign stage. Treat it as the highest priority target the moment it appears.</p>
+<p>The air variant flies over any terrain. Nadeshiko cannot hide behind water or mountains from it. The water variant pursues water-bound units, primarily Maria.</p>
+<p><em>First introduced in Chapter 4.</em></p>
+<script>
+(function () {
+  function applyLevel(level) {
+    document.getElementById("drone-level-display").textContent = level;
+    document.querySelectorAll(".drone-stat[data-base]").forEach(function (el) {
+      var base = parseFloat(el.dataset.base);
+      var rate = parseFloat(el.dataset.rate);
+      el.textContent = base + Math.trunc(rate * (level - 1));
+    });
+  }
+
+  function init() {
+    var slider = document.getElementById("drone-level");
+    if (!slider) return;
+    slider.addEventListener("input", function () {
+      applyLevel(parseInt(this.value, 10));
+    });
+    applyLevel(parseInt(slider.value, 10));
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+
+  /* Re-run after Material for MkDocs instant navigation swaps the page */
+  if (typeof document$ !== "undefined") {
+    document$.subscribe(init);
+  }
+})();
+</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
