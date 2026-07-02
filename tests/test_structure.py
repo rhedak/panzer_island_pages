@@ -55,6 +55,17 @@ def test_nav_entries_have_files():
     assert not missing, "Nav entries with missing files:\n" + "\n".join(missing)
 
 
+def test_webnovel_chapter_files_have_nav_entries():
+    """Every webnovel ch*.md file must have a corresponding nav entry in mkdocs.yml."""
+    nav_paths = {path for _, path in load_nav_entries() if path.startswith("webnovel/ch")}
+    missing = []
+    for f in sorted(PUBLISHED_DIR.glob("ch*.md")):
+        rel = f"webnovel/{f.name}"
+        if rel not in nav_paths:
+            missing.append(f.name)
+    assert not missing, "Published chapters missing from nav:\n" + "\n".join(missing)
+
+
 # ---------------------------------------------------------------------------
 # Published chapter front matter
 # ---------------------------------------------------------------------------
