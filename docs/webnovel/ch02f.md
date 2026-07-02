@@ -1,15 +1,15 @@
 ---
 title: "Chapter 2F: Population"
 description: A flashback to Erika's first arrival on Panzer Island, before the catastrophe, when twenty thousand people were still there.
-revision: 2
-updated: 2026-06-25
+revision: 3
+updated: 2026-07-02
 ---
 
 # Chapter 2F: Population
 
 *Published June 24, 2026*
 
-*Revision 2, updated June 25, 2026*
+*Revision 3, updated July 2, 2026*
 
 *Erika, before*
 
@@ -49,7 +49,13 @@ I walked north from the terminal along the harbor road. The salt smell was clean
 
 I did not stop. I noted it.
 
-The main road bent inland where the seafront narrowed to rock shelf, and the town settled into its working density: school on the left, the gate open, two teachers talking at the wall; post office on the right with a queue that was moving; a hardware shop with crates on the pavement that everyone navigated around with the ease of established habit. I passed a noticeboard outside the community center. A ferry schedule, a planning notice, a lost-cat poster with a photograph. All of it slightly weathered, all of it maintained.
+The main road bent inland where the seafront narrowed to rock shelf, and the town settled into its working density: post office on the right with a queue that was moving; a hardware shop with crates on the pavement that everyone navigated around with the ease of established habit.
+
+The school was on the left. The gate was open. Two teachers at the wall, mid-conversation. Beyond the main building, set back along the north side, the dormitory wing: long windows, a residential block, a few students in the yard below. The grounds ran back further than I had expected from the street.
+
+I walked on.
+
+I passed a noticeboard outside the community center. A ferry schedule, a planning notice, a lost-cat poster with a photograph. All of it slightly weathered, all of it maintained.
 
 The technical specification had been the draw: a cognitive architecture of that scope, applied to autonomous defense systems, with the integration challenges the brief implied. I had read the spec and had questions I could not ask until I was on-site. I had thought about those questions for three months. I had not thought much about the island.
 
