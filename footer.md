@@ -1,0 +1,1 @@
+Play Panzer Island now on [Steam](https://store.steampowered.com/app/4757690/Panzer_Island/), [Google Play](https://play.google.com/store/apps/details?id=com.rhedak.panzerisland), or in your browser on [itch.io](https://rhedak.itch.io/panzer-island-web). Or [read the webnovel]({{ webnovel_path }}).

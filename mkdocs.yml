@@ -55,6 +55,9 @@ nav:
   - Blog:
     - blog/index.md
 
+hooks:
+  - hooks/append_cta_footer.py
+
 extra_css:
   - stylesheets/extra.css
 
