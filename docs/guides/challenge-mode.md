@@ -82,89 +82,11 @@ On the hardest stages, taking heavy damage is sometimes unavoidable even when pl
 
 ## Submitting a run
 
-When you best a stage (100% or higher), a **Submit Score** button appears on the result screen. Pressing it opens this page in your browser with your run's data attached.
+When you best a stage (100% or higher), a **Submit Score** button appears on the result screen. Pressing it opens an in-game panel with two steps:
 
-<div id="challenge-submission" style="display:none;">
+1. **Export your action log.** The same export button used for the run's log saves a JSON file (or, on web, opens a copyable text view).
+2. **Email it** to **[panzerisland@proton.me](mailto:panzerisland@proton.me)**, with a button in the panel to copy the address.
 
-### Your run
-
-<p id="challenge-submission-summary"></p>
-
-<textarea id="challenge-submission-data" readonly rows="8" style="width:100%; font-family: monospace; font-size: 0.8em;"></textarea>
-
-<p>
-<button id="challenge-copy-btn" class="md-button">Copy run data</button>
-<a id="challenge-mailto-btn" class="md-button md-button--primary" href="#">Email this run</a>
-</p>
-
-<p><small>The email opens with a subject line already filled in. Paste the copied run data into the body before sending.</small></p>
-
-</div>
-
-If you did not arrive here from the game's Submit Score button, or just want to send feedback about Challenge Mode in general, email **[panzerisland@proton.me](mailto:panzerisland@proton.me)** directly. Include the chapter, stage, and your score.
+Don't have the log handy, or just want to share a good run? A screenshot of the result screen, or even a short email with your score, chapter, and stage, works too. We are happy to get any report of your run.
 
 There is no public leaderboard yet. Submitted runs are read manually and may inform target score tuning in future updates.
-
-<script>
-(function () {
-  function b64DecodeUnicode(str) {
-    return decodeURIComponent(
-      atob(str)
-        .split("")
-        .map(function (c) {
-          return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
-        })
-        .join("")
-    );
-  }
-
-  var params = new URLSearchParams(window.location.search);
-  var data = params.get("data");
-  if (!data) {
-    return;
-  }
-
-  var payload;
-  try {
-    payload = JSON.parse(b64DecodeUnicode(data));
-  } catch (e) {
-    return;
-  }
-
-  var section = document.getElementById("challenge-submission");
-  var summary = document.getElementById("challenge-submission-summary");
-  var textarea = document.getElementById("challenge-submission-data");
-  var copyBtn = document.getElementById("challenge-copy-btn");
-  var mailtoBtn = document.getElementById("challenge-mailto-btn");
-  if (!section || !summary || !textarea || !copyBtn || !mailtoBtn) {
-    return;
-  }
-
-  var pretty = JSON.stringify(payload, null, 2);
-  var chapter = payload.chapter;
-  var stage = payload.stage;
-
-  summary.textContent = "Chapter " + chapter + ", Stage " + stage + ".";
-  textarea.value = pretty;
-
-  var subject = encodeURIComponent(
-    "Challenge Mode submission: Chapter " + chapter + " Stage " + stage
-  );
-  var body = encodeURIComponent(
-    "Chapter " + chapter + ", Stage " + stage + "\n\nPaste your copied run data below:\n\n"
-  );
-  mailtoBtn.href = "mailto:panzerisland@proton.me?subject=" + subject + "&body=" + body;
-
-  copyBtn.addEventListener("click", function () {
-    textarea.select();
-    navigator.clipboard.writeText(textarea.value).then(function () {
-      copyBtn.textContent = "Copied";
-      setTimeout(function () {
-        copyBtn.textContent = "Copy run data";
-      }, 1500);
-    });
-  });
-
-  section.style.display = "block";
-})();
-</script>
