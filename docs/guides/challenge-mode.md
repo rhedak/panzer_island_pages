@@ -69,6 +69,8 @@ This means the target is a reasonable bar, not a theoretical maximum. Beating it
 
 On the hardest stages, taking heavy damage is sometimes unavoidable even when playing well. The score formula cannot go below 0, so on those stages the target itself may show as a low number, or even 0. Bested only requires reaching 100% of that stage's own target, so a stage with a low target is not necessarily an easy 100%; it just means the fixed starting conditions leave little room for a clean run.
 
+Every stage's fixed starting level is checked ahead of time and confirmed clearable before it ships, so a tight-feeling stage is never actually unwinnable. See [Balancing and Math](balancing.md) for how starting levels and difficulty are decided across the whole campaign, Challenge Mode included.
+
 ---
 
 ## Tips for a better score
