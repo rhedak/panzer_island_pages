@@ -9,6 +9,24 @@ This guide is for players who want to see the actual formulas behind the game's 
 
 ---
 
+## Core balancing principles
+
+Everything below is an implementation of a handful of ideas. If a formula further down seems oddly specific, it is in service of one of these:
+
+- **Level parity holds at every level.** A unit at level N fighting a drone at the same level N should be roughly as effective whether N is 1, 10, or 100. A fight should be won or lost on positioning, unit choice, and tactics, not on which arbitrary point of the leveling curve it happens to land on. The [effectiveness metric](#the-effectiveness-metric) and [two-factor stat growth](#two-factor-stat-growth) below exist to guarantee this.
+
+- **A perfect, no-grinding clear is possible, but only for players playing close to optimally.** The campaign is tuned so that a skilled player who never replays a stage for extra XP can still clear it on merit alone. It is not tuned so that an average playthrough clears without effort; skill and preparation are meant to matter.
+
+- **Difficulty rises roughly in a straight line within a chapter and peaks at the boss stage.** Drone count and drone level climb stage to stage rather than in sudden jumps, with each chapter's final stage as the intended high point before the next chapter resets.
+
+- **Each chapter gets harder through complexity, not just volume.** A new chapter's difficulty comes from new enemy drone types (new mechanics to read and react to), not simply more copies of drones the player already knows how to handle. For a player who has fully internalized a chapter's new mechanic, the actual difficulty of clearing it is meant to land in roughly the same place as the chapter before: the harder feel of a new chapter comes from unfamiliarity, not from the fight objectively demanding more. One consequence: the stage right after a boss plays easier than the tough stage before it, but is never trivial, since it is usually the stage that introduces the new chapter's mechanic.
+
+- **Grinding is an intended catch-up mechanism, not an exploit.** Replaying a stage for extra levels is meant to help, not to be a loophole worth patching out. In effect, the amount of grinding a given player needs to clear a chapter, or the whole campaign, is how the game adapts to that player's skill: a highly skilled player can clear in a single pass with no replays, while a less skilled player reaches the same endpoint by spending more attempts and picking up the extra levels along the way. See the [XP curve](#the-xp-curve) and the [overlevel](#the-overlevel-xp-penalty)/[underlevel](#the-underlevel-catch-up-bonus) sections below for how that catch-up is kept meaningful without being a free pass.
+
+**Chapter 1 is the exception to all of this.** As the tutorial chapter, it is deliberately easier than the principles above would otherwise call for, so new players can learn the game's mechanics without also fighting a tuned difficulty curve at the same time.
+
+---
+
 ## The effectiveness metric
 
 Every stat growth decision in Panzer Island is checked against one formula:
