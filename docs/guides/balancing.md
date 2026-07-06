@@ -44,6 +44,8 @@ Which gives every stat the same shape over levels:
 stat(N) = base × (1 + factor × (N − 1))
 ```
 
+Current values: `f_offense = 0.11`, `f_defense = 0.11`.
+
 At level N, every stat is a fixed multiple of its level 1 value, and every stat in the same factor group scales by exactly the same multiple. That is the entire trick: because unit attack and drone HP share `f_offense`, the `(1 + factor × (N − 1))` term appears on both sides of the effectiveness ratio and cancels out. Effectiveness holds constant at every level, automatically, without touching individual stat curves by hand.
 
 ### Why exactly two groups, not one or four
