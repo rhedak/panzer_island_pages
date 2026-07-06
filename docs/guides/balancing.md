@@ -92,22 +92,24 @@ The design intent behind that number: a clean, no-grinding playthrough that kill
 
 ## The XP curve
 
-The XP required to reach a given level follows a power curve:
+The XP required to reach a given level follows a power curve with a flat offset added on top:
 
 ```
-xp_for_level(L) = floor(A × (L − 1)^B)
+xp_for_level(L) = floor(A × (L − 1)^B + C × (L − 1))
 ```
 
-Current values: `A = 50`, `B = 2.0`. A few reference points from that formula:
+Current values: `A = 50`, `B = 2.0`, `C = 150`. A few reference points from that formula:
 
 | Level | XP required |
 |---|---|
-| 2 | 50 |
-| 10 | 4,050 |
-| 50 | 120,050 |
-| 100 | 490,050 |
+| 2 | 200 |
+| 10 | 5,400 |
+| 50 | 127,400 |
+| 100 | 504,900 |
 
 Squaring the level gap (`B = 2.0`) means the threshold steepens continuously: the jump from level 90 to 91 costs vastly more XP than the jump from level 9 to 10. This is deliberate. Kill and damage XP from drones scale with drone level, meaning a stronger, higher-level roster naturally produces more XP income per stage. If the level threshold grew too slowly relative to that income, the result is a runaway curve where a perfect playthrough massively overshoots the intended level for a given stage. An earlier version of this curve (`A = 450`, `B = 1.3`) did exactly that, ending a full campaign clear around level 215 instead of the intended range.
+
+The flat `C` term exists for a narrower reason: it slows down the very first few levels specifically. At low `L`, `C × (L − 1)` is a large share of the threshold; at high `L` the squared `A` term dwarfs it, so it barely changes the long-run shape of the curve. It was added after early playtests showed a unit could reach level 3 off of just two drone kills in the opening stage, faster than the curve was meant to feel.
 
 **Design target:** roughly one to two unit levels gained per stage played straight through, landing in the neighborhood of level 90 to 120 by the campaign's final stage. If you want to check whether a curve change lands correctly, the sanity check is straightforward: fit the actual per-stage XP-income curve your playstyle produces as a power law, then pick a threshold exponent that matches it closely enough that level growth stays close to linear in stage number, rather than accelerating or stalling.
 
@@ -127,6 +129,23 @@ Current values: `overlevel_factor = 0.9`, `overlevel_floor = 0.2`.
 At zero level gap, the multiplier is 1 (no penalty). Each additional level of gap multiplies the reward by another 0.9, so a 10-level gap leaves about 35% of the base XP, and the multiplier reaches its 0.2 floor around a 15-level gap and stays there no matter how far the gap grows past that point.
 
 The floor exists on purpose. Without one, the multiplier decays toward zero as the gap widens, and every kill collapses to the same tiny, fixed trickle regardless of how overleveled the fight actually is. Since replaying a failed stage attempt (keeping surviving units' XP, healing, and trying again) is a legitimate way to make progress on a hard stage, a decay with no floor can turn one extra drone level into the difference between a stage being grindable at all and being a hard wall. This is a single-player, fully offline game where grinding is an intended strategy, not an exploit to close off entirely, so the penalty is tuned to discourage low-level farming without erasing the value of an overleveled attempt at a genuinely hard fight.
+
+---
+
+## The underlevel catch-up bonus
+
+The mirror case also exists: fighting a drone above your level yields more XP than fighting one at or below it.
+
+```
+mult = 1 + underlevel_bonus × (drone.level − unit.level)
+xp   = floor(base_xp × mult)
+```
+
+Current value: `underlevel_bonus = 0.2`. No bonus applies at zero level gap or below; each level the drone sits above the unit adds another flat 20% on top of the base reward, so a unit five levels behind the drones it is fighting earns double the base XP per kill, and one ten levels behind earns triple.
+
+The bonus is additive rather than compounding (`1 + bonus × gap`, not `(1 + bonus)^gap`), so it grows in a straight line as the gap widens instead of accelerating. A unit that falls badly behind, whether from a late-joining teammate, a death penalty, or just an off playthrough, converges back toward the rest of the team over a few fights rather than the gap snowballing in either direction.
+
+This is the same design principle as the overlevel floor, approached from the other side: since a stage's intended drone level is fixed regardless of what level your team actually walks in at, a unit that enters underleveled still needs a realistic way to catch up rather than staying permanently behind for the rest of the campaign.
 
 ---
 
