@@ -152,3 +152,12 @@ How to sequence your skill picks for each unit. Relevant starting at level 4.
 
 **[Reactive Turns](reactive_turns.md)**
 The full mechanical breakdown of how the reactive turn system works. Return to this after Chapter 1.
+
+**[Challenge Mode](challenge-mode.md)**
+A score-based replay of any cleared stage with fixed unit stats. How scoring works and how to submit a run.
+
+**[Panzer Island: Skirmish](reddit.md)**
+The free Reddit version of Chapter 1: modes, scoring, and leaderboards.
+
+**[Balancing and Math](balancing.md)**
+The formulas behind stat growth, the XP curve, and difficulty tuning, for players who want the numbers behind the design.
