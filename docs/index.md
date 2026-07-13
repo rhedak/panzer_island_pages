@@ -125,3 +125,5 @@ Chapter 1 (10 stages, roughly one to two hours) is free on all platforms. The fu
 </div>
 
 Steam offers the Chapter 1 demo and the full game as separate entries. Google Play ships as a single app with Chapter 1 free and Chapters 2 onward unlocked by a one-time in-app purchase. The itch.io version plays directly in your browser with no download required.
+
+You can also try the combat-focused [Reddit game](guides/reddit.md), a standalone version with a playable puzzle on the splash screen that leads into all 10 Chapter 1 stages.

@@ -1,11 +1,25 @@
 ---
 title: Panzer Island: Skirmish
-description: How the Reddit version of Panzer Island works, including modes, scoring, and leaderboards.
+description: How the Reddit version of Panzer Island works, including the splash screen puzzle, modes, scoring, and leaderboards.
 ---
 
 # Panzer Island: Skirmish
 
-Panzer Island: Skirmish is a free version of Panzer Island playable directly inside a Reddit post. This guide covers how it works, how scoring and leaderboards work, and how it relates to the full game.
+![Panzer Island: Skirmish](../assets/screenshots/reddit_app.webp)
+
+[Panzer Island: Skirmish](https://www.reddit.com/r/PanzerIsland/comments/1k1q0z5/panzer_island_skirmish/) is a free version of Panzer Island playable directly inside a Reddit post. This guide covers the splash screen puzzle, how scoring and leaderboards work, and how it relates to the full game.
+
+---
+
+## The splash screen puzzle
+
+When you first open the post, you see a playable mini-puzzle instead of a static banner. It is a small tactics board where you control two of the three starting units against stationary drone towers. The goal is to destroy every tower without taking any damage.
+
+A new puzzle rotates in each day (based on UTC), drawn from a pool of ten boards of varying size and layout. Each board uses a subset of Katyusha, Nadeshiko, and Maria, and features typed sentinel and guard tower drones that only target specific unit types. Figuring out which unit can safely approach which tower is the core of the puzzle.
+
+Winning the puzzle shows a confetti celebration and a prompt to launch the full Skirmish game. Tapping **Play** or **Challenge** opens the full game from cached assets, so it boots nearly instantly. The puzzle also prefetches the game bundle in the background on your first interaction, so by the time you finish the puzzle the full game is ready to go.
+
+A link to this guide is available from the splash screen itself for reference.
 
 ---
 
