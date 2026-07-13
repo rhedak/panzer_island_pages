@@ -11,10 +11,6 @@ def _relative_webnovel_path(src_uri):
 def on_page_markdown(markdown, page, config, files):
     src = page.file.src_uri
 
-    # Webnovel chapters have their own author's note footer
-    if src.startswith("webnovel/ch"):
-        return markdown
-
     # Blog posts are plugin-managed
     if src.startswith("blog/"):
         return markdown
