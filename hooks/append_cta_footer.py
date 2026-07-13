@@ -19,7 +19,9 @@ def on_page_markdown(markdown, page, config, files):
     if src in ("styleguide_en.md", "404.md"):
         return markdown
 
-    footer_path = os.path.join(os.path.dirname(config.config_file_path), "footer.md")
+    footer_name = "footer_webnovel.md" if src.startswith("webnovel/ch") else "footer.md"
+    # noinspection PyTypeChecker
+    footer_path = os.path.join(os.path.dirname(config.config_file_path), footer_name)
     try:
         with open(footer_path) as f:
             footer = f.read().strip()
