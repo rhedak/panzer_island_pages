@@ -69,11 +69,12 @@ needs `title` and `description` front matter.
 The published webnovel pages live at `docs/webnovel/`. Drafts and design docs are
 in the sister repo `../panzer_island_webnovel` (private). Publication is a manual
 process: copy the polished draft from that repo to `docs/webnovel/` here, add front
-matter, the MkDocs nav entry, and the author's note footer.
+matter and the MkDocs nav entry. The CTA footer (Steam, Google Play, itch.io, Reddit
+links) is appended automatically by `hooks/append_cta_footer.py` at build time.
 
 ### Chapter navigation
 
-Published chapters have prev/next navigation links above the author's note footer.
+Published chapters have prev/next navigation links above the CTA footer.
 When adding a new chapter:
 
 1. Add the nav entry to `mkdocs.yml`

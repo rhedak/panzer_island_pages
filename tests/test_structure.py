@@ -110,20 +110,32 @@ def test_published_chapters_have_revision_metadata():
 
 
 # ---------------------------------------------------------------------------
-# Author's note footer
+# Author's note footer (added by hook at build time)
 # ---------------------------------------------------------------------------
 
-def test_published_chapters_have_footer():
-    """Every docs/webnovel/ch*.md must end with the author's note."""
-    missing = []
+def test_footer_hook_and_template_exist():
+    """The MkDocs hook and footer template must exist for the CTA footer."""
+    hook = REPO_ROOT / "hooks" / "append_cta_footer.py"
+    template = REPO_ROOT / "footer.md"
+    assert hook.exists(), f"Footer hook missing: {hook}"
+    assert template.exists(), f"Footer template missing: {template}"
+    hook_text = hook.read_text(encoding="utf-8")
+    assert "on_page_markdown" in hook_text, "Hook does not define on_page_markdown"
+    footer_text = template.read_text(encoding="utf-8")
+    assert "Steam" in footer_text, "Footer template missing Steam link"
+    assert "Reddit" in footer_text, "Footer template missing Reddit link"
+
+
+def test_published_chapters_have_no_manual_footer():
+    """Published chapters must not contain a manually pasted author's note footer."""
+    found = []
     for f in sorted(PUBLISHED_DIR.glob("ch*.md")):
-        if f.name == "index.md":
-            continue
         text = f.read_text(encoding="utf-8")
-        if FOOTER_MARKER not in text:
-            missing.append(f.name)
-    assert not missing, "Published chapters missing author's note footer:\n" + "\n".join(
-        missing
+        if FOOTER_MARKER in text:
+            found.append(f.name)
+    assert not found, (
+        "These chapters have a manual author's note footer that should be "
+        "removed (the hook adds it at build time):\n" + "\n".join(found)
     )
 
 
