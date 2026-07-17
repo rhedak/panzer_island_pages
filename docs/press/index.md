@@ -58,6 +58,10 @@ Screenshots are free to use for editorial and review purposes.
 
 ![Screenshot 5](../assets/screenshots/screenshot_05.webp)
 
+![Screenshot 6](../assets/screenshots/screenshot_06.webp)
+
+![Screenshot 7](../assets/screenshots/screenshot_07.webp)
+
 ---
 
 ## Contact

@@ -83,6 +83,12 @@ You command three AI units across a drone-controlled island, slowly uncovering t
 
 ![Screenshot 4](assets/screenshots/screenshot_04.webp)
 
+![Screenshot 5](assets/screenshots/screenshot_05.webp)
+
+![Screenshot 6](assets/screenshots/screenshot_06.webp)
+
+![Screenshot 7](assets/screenshots/screenshot_07.webp)
+
 ---
 
 ## New to the game?
