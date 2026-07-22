@@ -44,7 +44,6 @@ The rotors crossed the window left to right, higher than the pattern required, a
 
 That was where Wilhelm found me.
 
----
 
 He came in without knocking, which meant he had read the preliminary numbers from his own terminal and had already worked out what they meant. He looked at the center screen, then at the summary template, and did not sit down.
 
@@ -74,7 +73,6 @@ The rotors came back over the far end of the corridor, wide and unhurried, a rou
 
 "No," I said. "They are not."
 
----
 
 The maintenance dock at the waterfront building smelled of solvent and cold seawater, and Maria was where Maria was at the end of any trial day: on the dock edge beside her ship, hat over her eyes, radiating the specific unhurried patience of a person who has decided the evening is hers regardless of what anyone else needs from it.
 
@@ -110,7 +108,6 @@ Nobody said anything for a moment. Out past the breakwater, faint, the sound of 
 
 "I know it will. You're you." The hat settled. "Write the other thing too."
 
----
 
 I filed the summary that night, unchanged.
 

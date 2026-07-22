@@ -34,7 +34,6 @@ I wrote that down almost exactly that way. Then I read it back and cut the word 
 
 I checked the sentence against the data twice. It held both times. I was not going to get to write something more forgiving than that, and I did not try again after the second check.
 
----
 
 Wilhelm found me a little after midnight. He did this the way he did most things, without announcing it: the door opened, the corridor's cooler air moved through and settled, and by the time I looked up he was already reading the page upside down from across the desk, which he could do faster than most people could read it right side up.
 
@@ -70,7 +69,6 @@ He did not stay long after that. He had his own twelve pages somewhere, or their
 
 Then he was gone, and the lab went back to its own weather, and I finished the last page alone.
 
----
 
 The response came four days later, through the internal routing system, addressed to me and copied to the file. I read it standing at my own desk because I had not expected it to arrive before I sat down, and by the time I understood what it was, sitting down felt like it would have been the wrong response to it anyway.
 
@@ -86,7 +84,6 @@ I read the memo a third time in case a fourth reading would produce a different 
 
 I did not yet know who sat on that committee. I assumed, the way you assume about anything shaped like an institution, that a name existed behind the routing code and that the name would matter less than the decision already had. I was not wrong about that. I was only wrong about how much it would end up mattering to me specifically, and how long it would take me to find out.
 
----
 
 I had the authorization form on my desk within the hour. *Primary architect sign-off: Dr. E.*
 

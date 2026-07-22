@@ -21,8 +21,6 @@ Erika had been quiet at the secondary terminal for twenty minutes.
 
 This was how I knew she had found it too.
 
----
-
 
 By the fourth month of the project, her silences ran two kinds. The frustrated kind had motion in it: she reached for something, set it down, reached for something else. This one had none. She stopped reaching. She looked at the screen and the screen became the only thing in the room.
 
@@ -76,8 +74,6 @@ She stood there a moment longer, reading the curve. "The system is learning. Not
 
 She was quiet for a moment. Then she went back to the secondary terminal, and I went back to the whiteboard, and the silence shifted to the first kind: working.
 
----
-
 
 We worked for another hour. The whiteboard filled in on both sides. She pulled a stool to the edge of my working area and sat with a notebook, taking the parameter values as I worked through them.
 
@@ -105,8 +101,6 @@ I read it. She was at the secondary terminal. I returned to the upper range spec
 
 We had been in the building for eleven hours. I had stopped noticing the time around month three of the project and started noticing it again around month ten. The gradient problem was a good problem. It had the quality of a technical issue that mattered, not the quality of one manufactured by a committee to justify a conclusion that already existed. Erika had found the attractor behavior before I had expected her to. Both of those things were true, and they were sufficient for the day. I was also tired. This had been true since roughly month ten of the project, and I had learned to note it and leave it at that.
 
----
-
 
 At the end of the session she photographed the board.
 
@@ -125,8 +119,6 @@ The timer ran. I heard the click.
 The print came out small, still warm. She tucked it under the notebook without looking at it.
 
 I watched her do this and said nothing.
-
----
 
 
 We were packing up when she raised Phase Four.
@@ -169,8 +161,6 @@ She was still watching me.
 
 I followed her out.
 
----
-
 
 The east-wing corridor was quiet, the overhead strips dimmed to the night setting, harbor lights still visible through the far windows. She walked ahead, which she always did in corridors. She reached the stairwell door before I had finished locking the lab.
 
@@ -195,8 +185,6 @@ I went back up, let myself back into the lab, and found it on the desk: small, s
 In the stairwell, my footsteps were the only sound.
 
 I did not look at the photograph.
-
----
 
 
 [Previous Chapter: The Nest](ch11.md)
