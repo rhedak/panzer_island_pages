@@ -25,8 +25,6 @@ I made notes. The project brief had described the island in logistical terms: po
 
 I was almost sorry the ferry was fast.
 
----
-
 
 The terminal was a low building at the harbor's edge: ticket windows on the south side, covered waiting area on the north, bags and equipment stacked against every wall. A charter vessel and two water taxis were at the pier alongside us. The dock crew worked quickly, with the practiced indifference of people for whom arrivals are not events. Passengers crowded the gangway, families with too much luggage, a school group in matching jackets, a man with two dogs who had opinions about the disembarkation process.
 
@@ -41,8 +39,6 @@ It was ten past eleven. I had left my equipment cases with terminal storage. I h
 "What is there to do between here and there?" I asked.
 
 He tilted his head at the window. "Town."
-
----
 
 
 I walked north from the terminal along the harbor road. The salt smell was clean and direct, no complication underneath it, the offshore wind coming in steady from the south. The market square was two blocks from the terminal: a dozen stalls, vegetables and fish, and a baker with a queue eight people long. A child of perhaps five was engaged in a sustained negotiation with an adult about the terms under which a pastry might be purchased. The adult was losing.
@@ -65,8 +61,6 @@ The road climbed as it went further north, the commercial density thinning as th
 
 I turned back at the next corner and walked south.
 
----
-
 
 I turned off the main road where a footpath sign pointed toward the coast: thirty minutes before I needed to double back for the shuttle. The path dropped toward the southern shelf, a loose gravel track that widened as it descended, the harbor rising behind me on the hill and the research installation becoming visible in the middle distance as the line of sight cleared the scrub.
 
@@ -77,8 +71,6 @@ The farmland along the path was well-tended, the field borders clear, the irriga
 The path rejoined the coast road near the aviation facility: a hangar structure, concrete and rust-orange metal, civilian-built. The perimeter fence had flower beds along it at intervals, the plants full and neither new nor neglected, the kind of beds that are someone's specific responsibility and get tended on a schedule. The windsock at the near end of the approach cone moved slightly in the wind. A helipad on the west side, approach cones still in their positions.
 
 I did not stop. I noticed.
-
----
 
 
 The research complex occupied the top of the coastal shelf: six main structures linked by covered walkways, a vehicle yard, a perimeter that read as security-functional rather than military. I had expected a harder boundary. The guards at the gate were thorough, not aggressive. They checked my credentials with the efficiency of people who have done this often and found discrepancies rarely.
@@ -95,8 +87,6 @@ I had many. None of them were for Voss.
 
 He walked me to the third-level corridor and left without ceremony. The hallway had the quality of a facility in daily use: equipment cases against the wall, a cart with server hardware parked outside an open door, the low sound of cooling fans from inside a lab I did not look into. Through the window at the corridor's end, the coast shelf was visible in the late-afternoon light. The east-wing door had a keypad; my badge opened it.
 
----
-
 
 The lab was larger than I had pictured from the spec: three long workstations, equipment bays on the east wall, a secondary terminal alcove in the northeast corner. Everything powered down except the primary terminal, which had been left in standby. The spec had mentioned a co-PI on the architecture side; I could see from the workspace layout which station was his. The organization of it told me something about how he worked, which told me something about how we would disagree, which I filed without pursuing.
 
@@ -112,8 +102,6 @@ I checked the autonomy gradient specifications again. The brief had understated 
 
 At some point the light in the alcove windows had changed.
 
----
-
 
 The east wing looked out over the coast road and the harbor below. The town was lit now, the grid of it spreading from the waterfront up the slope, the market square dark, the school dark, the residential streets visible as lines of warm light. The ferry was back at the pier: the last crossing from the outer islands, the running lights clear in the early dark.
 
@@ -126,8 +114,6 @@ I had not thought about any of this when I read the technical specification. I h
 I closed the window shade.
 
 The phase four implementation note was still open.
-
----
 
 
 [Previous Chapter: Assembly](ch02.md) | [Next Chapter: Oracle](ch03.md)
