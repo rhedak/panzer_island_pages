@@ -29,7 +29,7 @@ Erika designed the system at the heart of this. She does not remember what she d
 present-day investigation and flashback chapters that reveal what the island looked like
 before. The truth builds one layer at a time, and each layer reframes the last.
 
-New chapters are published every weekday (Monday to Friday).
+New chapters are published Monday, Wednesday and Friday.
 
 Also available on [Royal Road](https://www.royalroad.com/fiction/176303/panzer-island).
 
