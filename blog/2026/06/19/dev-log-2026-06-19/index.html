@@ -1,0 +1,2591 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Stage Editor and Sandbox (Chapter 0) development update.">
+      
+      
+      
+        <link rel="canonical" href="https://rhedak.github.io/panzer_island_pages/blog/2026/06/19/dev-log-2026-06-19/">
+      
+      
+        <link rel="prev" href="../../13/how-generative-ai-supported-the-making-of-panzer-island/">
+      
+      
+        <link rel="next" href="../../21/ai-art-the-latest-end-of-civilization/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/shortcut_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Dev Log: 2026-06-19 - Panzer Island</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dev-log-2026-06-19" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Panzer Island" class="md-header__button md-logo" aria-label="Panzer Island" data-md-component="logo">
+      
+  <img src="../../../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Panzer Island
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dev Log: 2026-06-19
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../webnovel/" class="md-tabs__link">
+          
+  
+  
+  Webnovel
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../guides/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../story/" class="md-tabs__link">
+          
+  
+  
+  Story
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../support/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Support
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../credits/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Credits
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../press/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Press Kit
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Panzer Island" class="md-nav__button md-logo" aria-label="Panzer Island" data-md-component="logo">
+      
+  <img src="../../../../../assets/logo.png" alt="logo">
+
+    </a>
+    Panzer Island
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webnovel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webnovel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch02f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2F: Population
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Oracle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: The Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: The Crossing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Another Lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: The Boneyard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Dr. E.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Twenty-Three Names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: The Archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11: The Nest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch11f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11F: The Other PI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12: The Range
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13: The Anomaly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 14: The Wrong Tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch14f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 14F: Phase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 15: Oracle's Skeleton
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch15f/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 15F: Don't flatten them
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 16: The Report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 17: The Double Closes In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 18: The Same Mistake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 19: The City
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 20: The Plaque
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../webnovel/ch21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 21: The Order That Came Before
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your Units
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/drones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/objectives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage Objectives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Tactics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/skill-builds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skill Builds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/reactive_turns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reactive Turns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/challenge-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/reddit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Panzer Island: Skirmish
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../guides/balancing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Balancing and Math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Story
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Story
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../story/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../story/characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Characters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../press/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Press Kit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stage-editor-and-sandbox-chapter-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage Editor and Sandbox (Chapter 0)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage Editor and Sandbox (Chapter 0)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage Editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sandbox-chapter-chapter-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sandbox Chapter (Chapter 0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-play-services-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Play Services Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Play Services Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#godotplaygameservices-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GodotPlayGameServices Plugin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play-console-achievements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Play Console Achievements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play-console-iap-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Play Console IAP Product
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payment-gate-re-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Payment Gate (Re-enabled)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy-full-game-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buy Full Game Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sandbox-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sandbox Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-what-do-we-do-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 6: "What Do We Do Now?"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 6: &#34;What Do We Do Now?&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#field-repair-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Field Repair System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sector-rework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sector Rework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#themes-and-visuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Themes and Visuals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits-system-rework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credits System Rework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations-catchup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translations Catchup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Translations Catchup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jade-stage-overlays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JA/DE Stage Overlays
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translation-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translation Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam-store-copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steam Store Copy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam-patch-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steam Patch Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bug Fixes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minor
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="../../../../../assets/shortcut_icon.png" alt="Panzer Island Dev">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Panzer Island Dev
+                        
+                      </strong>
+                      <br>
+                      Developer updates
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-06-19 00:00:00+00:00" class="md-ellipsis">June 19, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              5 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="dev-log-2026-06-19">Dev Log: 2026-06-19<a class="headerlink" href="#dev-log-2026-06-19" title="Permanent link">&para;</a></h1>
+<h2 id="stage-editor-and-sandbox-chapter-0">Stage Editor and Sandbox (Chapter 0)<a class="headerlink" href="#stage-editor-and-sandbox-chapter-0" title="Permanent link">&para;</a></h2>
+<h3 id="stage-editor">Stage Editor<a class="headerlink" href="#stage-editor" title="Permanent link">&para;</a></h3>
+<p>A full in-game stage editor shipped this cycle. Players can design, edit, and play custom stages without leaving the game.</p>
+<!-- more -->
+
+<p><strong>Architecture:</strong>
+- <code>stage_editor.gd</code> (2208 lines): grid-based editor with terrain painting, unit/drone placement, prop placement, sector navigation, undo/redo, and save/load
+- <code>editor_hud.gd</code> (349 lines): toolbar with category buttons (terrain, units, drones, props, theme, sector, objective, settings), action buttons (save, play, undo, redo, reset), and status strip
+- <code>sandbox_stage_modal.gd</code> (80 lines): modal dialog for sandbox stages with Edit/Play buttons and unsaved-changes indicator</p>
+<p><strong>Features:</strong>
+- 16×7 grid with 8 terrain types (grass, water, road, forest, mountain, ruins, beach, bridge)
+- Unit placement (Katyusha, Nadeshiko, Maria) with drag-to-position
+- Drone placement from 14 drone types including AG/AA variants
+- Prop and skin picker with search
+- Multi-sector support with sector navigation
+- <code>field_repair_limit</code> exposed in stage settings
+- Worldmap preview updates on save
+- Godot-generated thumbnails replace manual ones
+- Android back button handling for editor exit
+- Unsaved-changes dot on worldmap tiles</p>
+<p><strong>Integration:</strong>
+- World map right-click on sandbox stages opens <code>SandboxStageModal</code> (Edit/Play)
+- <code>main.gd:_launch_editor(stage_num)</code> creates <code>StageEditor</code> instance
+- Editor saves to <code>user://stages/ch00/stage_NN_temp.json</code> (unsaved) or <code>data/stages/ch00/stage_NN.json</code> (committed)</p>
+<h3 id="sandbox-chapter-chapter-0">Sandbox Chapter (Chapter 0)<a class="headerlink" href="#sandbox-chapter-chapter-0" title="Permanent link">&para;</a></h3>
+<p>Chapter 0 is the sandbox mode: 10 empty stages players can customize freely.</p>
+<p><strong>Structure:</strong>
+- <code>chapter_00.json</code>: 3×3 grid with showdown at stage 10
+- <code>data/stages/ch00/stage_01.json</code> through <code>stage_10.json</code>: minimal starter stages (grass + water, 3 units, 1 guard tower)
+- <code>scripts/stages/ch00/stage_02.gd</code> through <code>stage_10.gd</code>: stage hooks</p>
+<p><strong>Workflow:</strong>
+1. Player selects a sandbox stage on the world map
+2. Right-click opens SandboxStageModal (Edit or Play)
+3. Edit launches the StageEditor with the stage loaded
+4. Play launches the stage directly (auto-saves if unsaved changes exist)
+5. Unsaved changes show an orange dot on the worldmap tile</p>
+<p><strong>Translation keys:</strong> <code>TITLE_SANDBOX</code>, <code>BTN_SANDBOX_EDIT</code>, <code>BTN_SANDBOX_PLAY</code>, <code>LBL_SANDBOX_UNSAVED</code>, plus save/exit confirmation dialogs</p>
+<hr />
+<h2 id="google-play-services-integration">Google Play Services Integration<a class="headerlink" href="#google-play-services-integration" title="Permanent link">&para;</a></h2>
+<h3 id="godotplaygameservices-plugin">GodotPlayGameServices Plugin<a class="headerlink" href="#godotplaygameservices-plugin" title="Permanent link">&para;</a></h3>
+<p>Installed the <a href="https://github.com/Iakobs/godot-play-game-services">GodotPlayGameServices</a> plugin (v3.2.0) for Android builds. The plugin handles sign-in, achievement unlocks, and leaderboard access through Google Play Game Services.</p>
+<p><strong>Setup:</strong>
+- Plugin binary: <code>addons/GodotPlayGameServices/bin/release/GodotPlayGameServices-release.aar</code> (79 KB)
+- Export plugin automatically injects the Game Services Application ID (<code>628094807607</code>) into the Android manifest via <code>@string/game_services_project_id</code>
+- <code>android/build/res/values/strings.xml</code> provides the project ID resource
+- <code>android/build/src/main/AndroidManifest.xml</code> declares <code>isGame="true"</code> and <code>appCategory="games"</code></p>
+<p><strong>play_games_manager.gd</strong> (rewritten):
+- Auto sign-in on <code>_ready()</code> via <code>GodotPlayGameServices.initialize()</code> and <code>plugin.isAuthenticated()</code>
+- <code>unlock_achievement(play_id)</code> queues unlocks that fire before the player has signed in
+- Queue flushes on <code>_on_user_authenticated(true)</code> to handle offline-first play
+- <code>signed_in_changed</code> signal for UI binding</p>
+<p><strong>Achievement unlock flow:</strong>
+1. Game calls <code>PlayGamesManager.unlock_achievement(play_id)</code>
+2. If signed in, unlock fires immediately via <code>plugin.unlockAchievement(play_id)</code>
+3. If not signed in, play_id is queued
+4. On sign-in, queued unlocks flush</p>
+<h3 id="play-console-achievements">Play Console Achievements<a class="headerlink" href="#play-console-achievements" title="Permanent link">&para;</a></h3>
+<p>85 achievements uploaded to Google Play Console via ZIP bulk import (<code>play_ach_icon_zip.py</code>). The tool generates a ZIP with CSV manifest + 140×140 PNG icons for each achievement.</p>
+<p><strong>Removed:</strong> <code>play_ach_upload.py</code> and Google API code. The Publishing API has deal-breakers:
+- Image upload endpoint deprecated (returns 503)
+- Partial updates (PUT with incomplete body) return 404
+- OAuth desktop flow required (org policy blocks service account key creation)</p>
+<p>ZIP bulk import works reliably and keeps the tool simple.</p>
+<h3 id="play-console-iap-product">Play Console IAP Product<a class="headerlink" href="#play-console-iap-product" title="Permanent link">&para;</a></h3>
+<p>Registered <code>full_game</code> SKU in Play Console:
+- <strong>Type:</strong> Non-consumable
+- <strong>Price:</strong> $4.99 USD
+- <strong>Description:</strong> "Unlock all 6 chapters (60 stages). Chapter 1 is free; chapters 2-6 require purchase."</p>
+<p>Product ID wired through <code>project.godot</code> <code>[billing]</code> section → <code>PremiumBilling</code> → <code>PremiumAccess</code>.</p>
+<h3 id="payment-gate-re-enabled">Payment Gate (Re-enabled)<a class="headerlink" href="#payment-gate-re-enabled" title="Permanent link">&para;</a></h3>
+<p><code>premium_access.gd</code> gate re-enabled for release builds:
+- <code>play_store_gate_active()</code> returns true only on Android release builds (not demo, not editor)
+- <code>should_block_entering_chapter(2+)</code> checks <code>GameManager.full_game_owned</code>
+- Clearing Chapter 1 no longer auto-advances on gated builds; players tap NEXT CHAPTER, complete billing sheet</p>
+<h3 id="buy-full-game-page">Buy Full Game Page<a class="headerlink" href="#buy-full-game-page" title="Permanent link">&para;</a></h3>
+<p>New options menu page (<code>options_menu.gd:_build_buy_page()</code>) with platform-aware sub-menu:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Buy Now</th>
+<th>Restore</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android</td>
+<td>Play Billing flow</td>
+<td>PANZER-PLAY key dialog</td>
+<td>email</td>
+</tr>
+<tr>
+<td>Web/Other</td>
+<td>itch.io purchase link</td>
+<td>PANZER-ISLAND key dialog</td>
+<td>email</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Play Key Gate</strong> (<code>play_key_gate.gd</code>):
+- Validates PANZER-PLAY-XXXX-XXXX format keys via SHA-256 hash
+- Rejects web keys (PANZER-ISLAND prefix)
+- Only active on Android release builds</p>
+<p><strong>Web Supporter Gate</strong> (<code>supporter_gate.gd</code>):
+- Existing PANZER-ISLAND key validation for web/itch.io builds</p>
+<h3 id="sandbox-testing">Sandbox Testing<a class="headerlink" href="#sandbox-testing" title="Permanent link">&para;</a></h3>
+<p>The payment gate is designed for closed-track testing:
+- <strong>License testers</strong> in Play Console can purchase without charging
+- Non-consumed acknowledgements (<code>acknowledgePurchase</code>) required by Billing Library rules
+- Demo builds bypass the gate entirely (<code>BuildConfig.is_demo</code>)
+- Editor builds bypass the gate (for development)
+- Desktop release builds stay fully unlocked (no IAP)</p>
+<hr />
+<h2 id="chapter-6-what-do-we-do-now">Chapter 6: "What Do We Do Now?"<a class="headerlink" href="#chapter-6-what-do-we-do-now" title="Permanent link">&para;</a></h2>
+<p>Chapter 6 shipped. The final chapter brings the ORACLE confrontation to a close.</p>
+<h3 id="field-repair-system">Field Repair System<a class="headerlink" href="#field-repair-system" title="Permanent link">&para;</a></h3>
+<p>New mechanic: <strong>field_repair_limit</strong> per stage.</p>
+<ul>
+<li><code>stage.json</code> gains <code>field_repair_limit</code> (int, default 0)</li>
+<li><code>stage_controller.gd</code> tracks remaining repairs per layer</li>
+<li><code>game_manager.gd</code> manages repair inventory</li>
+<li>Players can repair damaged units mid-stage, adding tactical flexibility</li>
+</ul>
+<p>The solver's greedy planner (<code>priorities.py</code>) was extended with field-repair priority logic (159 lines). All solver carry states (ch01-ch06) were regenerated to account for the new mechanic.</p>
+<p>Ch06 stage 10 was rebalanced around field repairs to be solvable.</p>
+<h3 id="sector-rework">Sector Rework<a class="headerlink" href="#sector-rework" title="Permanent link">&para;</a></h3>
+<p>Ch06 received a sector rework (S10 boss stage in particular) to improve flow and difficulty曲线.</p>
+<h3 id="themes-and-visuals">Themes and Visuals<a class="headerlink" href="#themes-and-visuals" title="Permanent link">&para;</a></h3>
+<p>New terrain themes for ch06 with custom backdrops. Mountain terrain sprites redesigned with stepped peaks and pillar shapes for better readability against building props.</p>
+<hr />
+<h2 id="credits-system-rework">Credits System Rework<a class="headerlink" href="#credits-system-rework" title="Permanent link">&para;</a></h2>
+<p>Credits system rewritten to support per-chapter credit rolls:</p>
+<ul>
+<li><code>credits.json</code> replaced with per-language files: <code>credits.en.json</code>, <code>credits.ja.json</code>, <code>credits.de.json</code></li>
+<li><code>credits_loader.gd</code> rewritten to handle chapter-specific credits</li>
+<li>Removed old <code>credits_ch02.json</code> in favor of the new per-language structure</li>
+<li>Tests expanded from basic load to full chapter-credit validation (246 lines)</li>
+</ul>
+<hr />
+<hr />
+<h2 id="translations-catchup">Translations Catchup<a class="headerlink" href="#translations-catchup" title="Permanent link">&para;</a></h2>
+<h3 id="jade-stage-overlays">JA/DE Stage Overlays<a class="headerlink" href="#jade-stage-overlays" title="Permanent link">&para;</a></h3>
+<p>40 new overlay files created for ch05 and ch06:
+- <code>data/stages/ch05/ja/stage_01.json</code> through <code>stage_10.json</code>
+- <code>data/stages/ch05/de/stage_01.json</code> through <code>stage_10.json</code>
+- <code>data/stages/ch06/ja/stage_01.json</code> through <code>stage_10.json</code>
+- <code>data/stages/ch06/de/stage_01.json</code> through <code>stage_10.json</code></p>
+<p>Each overlay translates <code>name</code>, <code>objective_text</code>, <code>world_map_objective</code>, <code>layers[].sector_name</code>, and <code>layers[].tutorial_text</code>.</p>
+<h3 id="translation-keys">Translation Keys<a class="headerlink" href="#translation-keys" title="Permanent link">&para;</a></h3>
+<p>7 new keys added to <code>strings.csv</code> for the Buy Full Game page:
+- <code>BTN_BUY_FULL_GAME</code>, <code>BTN_BUY_NOW</code>, <code>BTN_RESTORE_PURCHASE</code>, <code>BTN_CONNECT_SUPPORT</code>
+- <code>LBL_BUY_FULL_GAME_INFO</code>, <code>LBL_PLAY_KEY_GATE_BODY</code>, <code>MSG_PLAY_KEY_INVALID</code></p>
+<h3 id="steam-store-copy">Steam Store Copy<a class="headerlink" href="#steam-store-copy" title="Permanent link">&para;</a></h3>
+<p>Updated <code>storepage_1191484_all.json</code> (EN/DE/JA):
+- "Chapters 1-3 (30 stages)" → "Chapters 1-6 (60 stages)"
+- Fixed stale "1-3" reference in DE short description
+- Mac min OS corrected from "macOS 10.15 Catalina" to "macOS 11.0 Big Sur"</p>
+<h3 id="steam-patch-notes">Steam Patch Notes<a class="headerlink" href="#steam-patch-notes" title="Permanent link">&para;</a></h3>
+<p><code>patchnote_v0.1.4.47.csv</code> written in EN/DE/JA with BBCode formatting. Ready for Steamworks upload.</p>
+<hr />
+<h2 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Nexus summon level:</strong> <code>nexus_summon</code> now uses default drone level instead of incorrectly inherited level</li>
+<li><strong>Game freeze on sector transition:</strong> Infinite loop in <code>stage_controller.gd</code> during layer transitions under specific drone alert-state conditions</li>
+<li><strong>Cutscene skip button:</strong> Landing cutscene skip not functional on first launch</li>
+<li><strong>DE achievement names:</strong> Fixed duplicates ("Vernichter" → "Auslöschung" for Annihilator, "Entfesselt" → "Ungebändigt" for Unleashed)</li>
+<li><strong>JA tutorial text:</strong> Mixed Chinese/Japanese characters in ch05 stage 01 fixed</li>
+<li><strong>DE sector name length:</strong> Ch06 stage 10 "DIE ENTSCHEIDUNGSSCHLACHT" (25 chars) shortened to "ENTSCHEIDUNGSSCHLACHT" (21 chars) per styleguide limit</li>
+</ul>
+<hr />
+<h2 id="minor">Minor<a class="headerlink" href="#minor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Font updated (<code>NotoSansJP-game.ttf</code>)</li>
+<li><code>gitignore</code> updated for Play Games Services plugin</li>
+<li><code>CLAUDE.md</code> updated with parity table and translation workflow</li>
+<li>Ch1 immersion polish pass</li>
+<li><code>publishing.md</code> updated with IAP description, billing docs, and chapter counts</li>
+<li>619 tests pass, check.sh clean</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
