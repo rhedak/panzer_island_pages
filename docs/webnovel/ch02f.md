@@ -1,19 +1,20 @@
 ---
 title: "Chapter 2F: Population"
 description: A flashback to Erika's first arrival on Panzer Island, before the catastrophe, when twenty thousand people were still there.
-revision: 3
-updated: 2026-07-02
+revision: 4
+updated: 2026-07-27
 ---
+
 
 # Chapter 2F: Population
 
 *Published June 24, 2026*
 
-*Revision 3, updated July 2, 2026*
-
-*Erika, before*
+*Revision 4, updated July 27, 2026*
 
 ![Erika standing at the bow rail of the ferry approaching Panzer Island, the harbor visible in the distance](../assets/webnovel/ch02f.webp){ .chapter-illustration }
+
+*Erika, before*
 
 The ferry took four hours from the port at Kelsen, including a stop at the outer islands. I spent most of it at the bow rail.
 
@@ -24,7 +25,6 @@ Panzer Island came into view an hour out: a dark shape on the water that resolve
 I made notes. The project brief had described the island in logistical terms: population approximately twenty thousand, distributed across the harbor town, northern residential districts, and farming and fishing communities in the interior. The installation occupied the southern shelf. The brief had not said what the water looked like, or how the hills read against the sky, because those were not logistical facts.
 
 I was almost sorry the ferry was fast.
-
 
 The terminal was a low building at the harbor's edge: ticket windows on the south side, covered waiting area on the north, bags and equipment stacked against every wall. A charter vessel and two water taxis were at the pier alongside us. The dock crew worked quickly, with the practiced indifference of people for whom arrivals are not events. Passengers crowded the gangway, families with too much luggage, a school group in matching jackets, a man with two dogs who had opinions about the disembarkation process.
 
@@ -38,8 +38,9 @@ It was ten past eleven. I had left my equipment cases with terminal storage. I h
 
 "What is there to do between here and there?" I asked.
 
-He tilted his head at the window. "Town."
+He tilted his head at the window.
 
+"Town."
 
 I walked north from the terminal along the harbor road. The salt smell was clean and direct, no complication underneath it, the offshore wind coming in steady from the south. The market square was two blocks from the terminal: a dozen stalls, vegetables and fish, and a baker with a queue eight people long. A child of perhaps five was engaged in a sustained negotiation with an adult about the terms under which a pastry might be purchased. The adult was losing.
 
@@ -55,12 +56,11 @@ I passed a noticeboard outside the community center. A ferry schedule, a plannin
 
 The technical specification had been the draw: a cognitive architecture of that scope, applied to autonomous defense systems, with the integration challenges the brief implied. I had read the spec and had questions I could not ask until I was on-site. I had thought about those questions for three months. I had not thought much about the island.
 
-It was not the kind of place that required thinking about. It simply was: a town on an island, twenty thousand people, ordinary in the way that places where people have lived for a long time are ordinary, which is to say densely, specifically, without self-consciousness about it. The baker's queue. The lost cat. The teacher at the gate, her coffee still in her hand because she hadn't had time to finish it.
+It was not the kind of place that required thinking about. It simply was: a town on an island, twenty thousand people, ordinary in the way that places where people have lived for a long time are ordinary, which is to say densely, specifically, without self-consciousness about it: the baker's queue, the lost cat, the teacher at the gate with her coffee still in her hand because she hadn't had time to finish it.
 
 The road climbed as it went further north, the commercial density thinning as the residential streets began. I passed a bus shelter: a route map under glass, the main stops printed and the village connections penciled in beside them. Six village names on the route, four legible from the pavement. A child on a bicycle came past too fast and veered around me without looking; the adult thirty meters behind called something that was probably "slow down." The child did not slow down.
 
 I turned back at the next corner and walked south.
-
 
 I turned off the main road where a footpath sign pointed toward the coast: thirty minutes before I needed to double back for the shuttle. The path dropped toward the southern shelf, a loose gravel track that widened as it descended, the harbor rising behind me on the hill and the research installation becoming visible in the middle distance as the line of sight cleared the scrub.
 
@@ -72,21 +72,23 @@ The path rejoined the coast road near the aviation facility: a hangar structure,
 
 I did not stop. I noticed.
 
-
 The research complex occupied the top of the coastal shelf: six main structures linked by covered walkways, a vehicle yard, a perimeter that read as security-functional rather than military. I had expected a harder boundary. The guards at the gate were thorough, not aggressive. They checked my credentials with the efficiency of people who have done this often and found discrepancies rarely.
 
 The project administrator was a compact man in his fifties named Voss, who had the quality of treating time as a resource not to be wasted on either party. He checked my name against a printed list before he looked at me.
 
-"Primary lab, third level, east wing. Orientation is tomorrow morning at nine. The lead researcher asked that you be shown to the workspace today." A half-pause that suggested something had been said about me. "Said you would prefer to orient yourself."
+"Primary lab, third level, east wing. Orientation is tomorrow morning at nine. The lead researcher asked that you be shown to the workspace today."
+A half-pause that suggested something had been said about me.
+"Said you would prefer to orient yourself."
 
 "Correct."
 
-"The rest of the team arrives Monday. You have the lab until then." He had my badge ready. "Any questions?"
+"The rest of the team arrives Monday. You have the lab until then."
+He had my badge ready.
+"Any questions?"
 
 I had many. None of them were for Voss.
 
 He walked me to the third-level corridor and left without ceremony. The hallway had the quality of a facility in daily use: equipment cases against the wall, a cart with server hardware parked outside an open door, the low sound of cooling fans from inside a lab I did not look into. Through the window at the corridor's end, the coast shelf was visible in the late-afternoon light. The east-wing door had a keypad; my badge opened it.
-
 
 The lab was larger than I had pictured from the spec: three long workstations, equipment bays on the east wall, a secondary terminal alcove in the northeast corner. Everything powered down except the primary terminal, which had been left in standby. The spec had mentioned a co-PI on the architecture side; I could see from the workspace layout which station was his. The organization of it told me something about how he worked, which told me something about how we would disagree, which I filed without pursuing.
 
@@ -102,7 +104,6 @@ I checked the autonomy gradient specifications again. The brief had understated 
 
 At some point the light in the alcove windows had changed.
 
-
 The east wing looked out over the coast road and the harbor below. The town was lit now, the grid of it spreading from the waterfront up the slope, the market square dark, the school dark, the residential streets visible as lines of warm light. The ferry was back at the pier: the last crossing from the outer islands, the running lights clear in the early dark.
 
 I stood at the window longer than I had meant to.
@@ -115,6 +116,4 @@ I closed the window shade.
 
 The phase four implementation note was still open.
 
-
 [Previous Chapter: Assembly](ch02.md) | [Next Chapter: Oracle](ch03.md)
-
