@@ -9,6 +9,8 @@ revision: 1
 
 *Published July 28, 2026*
 
+![Erika seated across the table from Commandant Reiss during the oversight committee meeting, her objection dismissed, hands flat on a single sheet of paper](../assets/webnovel/ch19f.webp){ .chapter-illustration }
+
 *Erika, before*
 
 The committee met on the third floor of a building I had been in perhaps six times in three years, always for the same reason: a squat civic structure two streets back from the harbor administration block, built for permits and land registries and had absorbed the oversight function the way a filing cabinet absorbs whatever gets put in the wrong drawer often enough. I always took the same route to it, the coast road and then the second turning inland, and I had stopped noticing the walk sometime in the second year.
