@@ -117,4 +117,4 @@ Erika stood in front of the board for a moment before we left. Blank, ruled, dus
 
 The sea had nothing to report, the whole drive home.
 
-[Previous Chapter: Both Names](ch26.md)
+[Previous Chapter: Both Names](ch26.md) | [Next Chapter: Remember It](ch27.md)
