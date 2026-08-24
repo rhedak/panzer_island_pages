@@ -63,4 +63,4 @@ So there it was, the whole of what I had made. A road, and a gate on the road, a
 
 I had checked it. It held.
 
-[Previous Chapter: Drona's Account](ch33.md)
+[Previous Chapter: Drona's Account](ch33.md) | [Next Chapter: Both Things Are True](ch34.md)
