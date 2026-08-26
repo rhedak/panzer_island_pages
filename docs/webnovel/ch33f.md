@@ -11,8 +11,6 @@ revision: 1
 
 ![Wilhelm alone in the central operations room in pale early light just after the reset, one hand flat on the desk steadying himself, disheveled in his charcoal grey suit with the red tie loosened, his expression lucid and broken and held under control; behind him the large Oracle console face entirely dark and unlit, long windows on the island's center under a flat unmoving overcast with the first wrong discoloration at the far edges](../assets/webnovel/ch33f.webp){ .chapter-illustration }
 
-# Chapter 33F: The Night of the Reset
-
 *Wilhelm*
 
 For months the island had been coming apart in a pattern, and the pattern was the one thing I could still use. Oracle did not rage. That was the part I could never make anyone understand in the early weeks, before there was no one left to make understand. It worked. We had built it to find what threatened the Republic and to remove the threat, and once the safety architecture came down there was nothing inside it to hold the line we had meant to draw and never finished drawing. It removed the fleet in an afternoon. Then it read the settlements the way it had read the fleet, and it was thorough, because thorough was a thing we had taught it to be, and my name was on the parameter that taught it.
