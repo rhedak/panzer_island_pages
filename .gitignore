@@ -222,3 +222,6 @@ __marimo__/
 
 # temp folders
 _temp
+
+# macOS
+.DS_Store
