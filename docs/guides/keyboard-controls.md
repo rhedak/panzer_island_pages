@@ -1,6 +1,6 @@
 ---
 title: Keyboard controls
-description: Every keyboard shortcut in Panzer Island on desktop, from selecting units and stepping routes with the arrow keys to confirming popups, plus how to remap any key.
+description: Every keyboard shortcut in Panzer Island on desktop, from selecting units and stepping routes with the arrow keys to aiming at distant drones, zooming, and confirming popups, plus how to remap any key.
 ---
 
 # Keyboard controls
@@ -24,11 +24,15 @@ Every shortcut does exactly what the matching on-screen button does. If a button
 | **Z** | Undo (Easy difficulty) |
 | **Backspace** | Remove the last queued action |
 | **I** | Open unit details |
-| **Arrow keys** | Step a route, browse, or page chapters (see below) |
+| **T** or **Tab** | Lock the next reachable drone as the attack target (**Shift** goes back) |
+| **+** | Zoom in |
+| **-** | Zoom out |
+| **0** | Reset zoom |
+| **Arrow keys** | Step a route, aim, browse, or page chapters (see below) |
 | **Esc** | Pause menu |
 | **F11** | Toggle fullscreen |
 
-Esc, F11, and Enter are fixed. You cannot remap them, and you cannot assign them to another action.
+Esc, F11, Enter, Tab, and the numpad **+**, **-**, and **0** keys are fixed. You cannot remap them, and you cannot assign them to another action. The numpad keys work as extra zoom keys alongside the main ones.
 
 ---
 
@@ -43,13 +47,45 @@ A full move can be done without touching the mouse.
 
 To shorten a route, press the arrow key that points back at the previous cell. Stepping back onto the previous waypoint removes the last step. Stepping back off the first step clears the route and leaves the unit selected.
 
-To attack, step the route into a cell that holds a drone. That drone becomes the attack target, the same way it does when you drag a path with the mouse.
+To attack, step the route into a cell that holds a drone. That drone becomes the attack target, the same way it does when you drag a path with the mouse. For drones that are further away, see the next section.
 
 Press **C** to cancel a route in progress. If you have a unit selected but have not started a route, **C** deselects it.
 
 Press **I** with a unit selected to open its details panel.
 
 ![Route preview: cyan line shows the planned path, orange cells mark danger zones with predicted hit counts](guide_assets/scene_route_preview.png)
+
+---
+
+## Aiming at distant drones
+
+Some drones cannot be reached by walking. Maria only moves on water, for example, so a drone on land is out of her path, even when she can hit it from the shore. The keyboard has two ways to target these drones.
+
+### The aiming cursor
+
+When you press an arrow key toward a cell your unit cannot walk to, the route stays where it is and a yellow aiming cursor appears on that cell. It does not move the unit or change the route.
+
+- Keep pressing the arrow keys to move the cursor. It can cross land, mountains, and water alike, as long as the cell is within attack range of somewhere your unit can stand. Maria, with a range of 3, can aim at land tiles up to three cells from the water she can reach.
+- When the cursor lands on a drone, that drone is locked in as the attack target, exactly as if you had clicked it. The route to a firing position is planned for you. You can then press **E** to execute, or keep extending the route.
+- To drop the cursor, step it back onto the cell where it started, or press **C**. A second **C** then cancels the route as usual.
+
+The locked drone also gets the same range outline and stat tooltip you see when hovering with the mouse.
+
+### Cycling targets
+
+Press **T** or **Tab** to lock the nearest drone your unit can reach. Press it again for the next one, and the list wraps around. Hold **Shift** to go backwards. Drones that cannot be reached are skipped.
+
+If no unit is selected, **T** or **Tab** first selects Katyusha, then locks the nearest drone she can reach. If Katyusha is not available, it falls back to Nadeshiko, then Maria.
+
+Each press that needs the unit to move first plans the firing position for you. The next press swaps that position for the new target instead of adding another step.
+
+---
+
+## Zooming
+
+The **+** and **-** keys zoom the stage camera in and out, one mouse-wheel step per press, and they repeat while held. **0** resets the zoom to the default view. The numpad **+**, **-**, and **0** work too. On keyboards where **+** or **-** sit on different keys, the character itself is recognized, so the usual keys work either way.
+
+Like the mouse wheel, the zoom keys pause during enemy animations and while a popup is open.
 
 ---
 
@@ -71,7 +107,7 @@ The arrow keys do different things depending on what is on screen.
 
 | Situation | Left and Right | Up and Down |
 |---|---|---|
-| A unit is selected | Step the route one cell | Step the route one cell |
+| A unit is selected | Step the route one cell, or move the aiming cursor | Step the route one cell, or move the aiming cursor |
 | Nothing selected, queue has actions | Browse queued actions | No effect |
 | Undo browser is open | Step through checkpoints | No effect |
 | World map | Previous and next chapter | Previous and next mode or difficulty |
@@ -114,7 +150,7 @@ This covers tutorial popups, confirmation dialogs, level-up choices, memory frag
 A few rules apply.
 
 - **Esc** cancels the capture without changing anything.
-- **F11**, **Enter**, and modifier keys on their own (Shift, Ctrl, Alt, Meta, Caps Lock) cannot be assigned. The page tells you when a key is refused.
+- **F11**, **Enter**, **Tab**, the numpad **+**, **-**, and **0**, and modifier keys on their own (Shift, Ctrl, Alt, Meta, Caps Lock) cannot be assigned. The page tells you when a key is refused.
 - If the key you press is already used by another action, the two actions **swap** keys. The page names the action that moved, so nothing is ever left without a key by accident.
 - **Reset Keys to Defaults** restores every shortcut at once.
 
@@ -128,10 +164,13 @@ Keys are stored by physical position, not by the letter printed on the keycap. I
 
 1. **K**, **N**, **M** select a unit. **I** opens its details.
 2. Arrow keys step the route. Step backward to undo a step.
-3. **E** or **Enter** executes. **C** cancels. **Q** queues.
-4. **Z** opens undo on Easy. Arrow keys browse. **Z** or **E** confirms.
-5. **E** and **C** also answer popups.
-6. Remap everything except Esc, F11, and Enter under **Controls** in Options.
+3. Arrow keys toward unwalkable cells start the aiming cursor. Land it on a drone to lock the target.
+4. **T** or **Tab** locks the next reachable drone. **Shift** goes back.
+5. **E** or **Enter** executes. **C** cancels. **Q** queues.
+6. **Z** opens undo on Easy. Arrow keys browse. **Z** or **E** confirms.
+7. **+**, **-**, and **0** zoom in, zoom out, and reset.
+8. **E** and **C** also answer popups.
+9. Remap everything except Esc, F11, Enter, Tab, and the numpad zoom keys under **Controls** in Options.
 
 ---
 
