@@ -24,6 +24,7 @@ Every shortcut does exactly what the matching on-screen button does. If a button
 | **Z** | Undo (Easy difficulty) |
 | **Backspace** | Remove the last queued action |
 | **I** | Open unit details |
+| **L** | Fire a limit break |
 | **T** or **Tab** | Lock the next reachable drone as the attack target (**Shift** goes back) |
 | **+** | Zoom in |
 | **-** | Zoom out |
@@ -52,6 +53,8 @@ To attack, step the route into a cell that holds a drone. That drone becomes the
 Press **C** to cancel a route in progress. If you have a unit selected but have not started a route, **C** deselects it.
 
 Press **I** with a unit selected to open its details panel.
+
+Press **L** to fire a limit break. With a unit selected, it fires that unit's limit break, and only when its gauge is full. With nothing selected, it fires the first ready one in the order Katyusha, Nadeshiko, Maria. It works like pressing the glowing gauge: the usual confirmation appears first, and **E** or **Enter** accepts it while **C** cancels. The key does nothing while the gauge is not ready, during enemy animations, or in modes where the gauge is hidden.
 
 ![Route preview: cyan line shows the planned path, orange cells mark danger zones with predicted hit counts](guide_assets/scene_route_preview.png)
 
@@ -162,7 +165,7 @@ Keys are stored by physical position, not by the letter printed on the keycap. I
 
 ## Quick reference
 
-1. **K**, **N**, **M** select a unit. **I** opens its details.
+1. **K**, **N**, **M** select a unit. **I** opens its details. **L** fires a ready limit break.
 2. Arrow keys step the route. Step backward to undo a step.
 3. Arrow keys toward unwalkable cells start the aiming cursor. Land it on a drone to lock the target.
 4. **T** or **Tab** locks the next reachable drone. **Shift** goes back.
