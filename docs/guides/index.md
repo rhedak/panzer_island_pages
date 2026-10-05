@@ -156,6 +156,9 @@ The full mechanical breakdown of how the reactive turn system works. Return to t
 **[Challenge Mode](challenge-mode.md)**
 A score-based replay of any cleared stage with fixed unit stats. How scoring works and how to submit a run.
 
+**[Keyboard Controls](keyboard-controls.md)**
+Every desktop shortcut, how the arrow keys change meaning by context, and how to remap keys.
+
 **[Panzer Island: Skirmish](reddit.md)**
 The free Reddit version of Chapter 1: modes, scoring, and leaderboards.
 
