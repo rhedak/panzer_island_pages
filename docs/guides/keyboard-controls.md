@@ -29,7 +29,7 @@ Every shortcut does exactly what the matching on-screen button does. If a button
 | **+** | Zoom in |
 | **-** | Zoom out |
 | **0** | Reset zoom |
-| **Arrow keys** | Step a route, aim, browse, or page chapters (see below) |
+| **Arrow keys** or **W A S D** | Step a route, aim, browse, or page chapters (see below) |
 | **Esc** | Pause menu |
 | **F11** | Toggle fullscreen |
 
@@ -106,7 +106,7 @@ The queue lets you plan actions for several units and run them in one go.
 
 ## Arrow keys by context
 
-The arrow keys do different things depending on what is on screen.
+The arrow keys do different things depending on what is on screen. **W**, **A**, **S**, and **D** are a second set of arrows, so **A** and **D** mean Left and Right, and **W** and **S** mean Up and Down, everywhere in this guide. Each of the four can be remapped separately from its arrow key, and the arrows keep working either way.
 
 | Situation | Left and Right | Up and Down |
 |---|---|---|
@@ -173,7 +173,8 @@ Keys are stored by physical position, not by the letter printed on the keycap. I
 6. **Z** opens undo on Easy. Arrow keys browse. **Z** or **E** confirms.
 7. **+**, **-**, and **0** zoom in, zoom out, and reset.
 8. **E** and **C** also answer popups.
-9. Remap everything except Esc, F11, Enter, Tab, and the numpad zoom keys under **Controls** in Options.
+9. **W A S D** work like the arrow keys.
+10. Remap everything except Esc, F11, Enter, Tab, and the numpad zoom keys under **Controls** in Options.
 
 ---
 
