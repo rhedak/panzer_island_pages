@@ -54,7 +54,7 @@ Press **C** to cancel a route in progress. If you have a unit selected but have 
 
 Press **I** with a unit selected to open its details panel.
 
-Press **L** to fire a limit break. With a unit selected, it fires that unit's limit break, and only when its gauge is full. With nothing selected, it fires the first ready one in the order Katyusha, Nadeshiko, Maria. It works like pressing the glowing gauge: the usual confirmation appears first, and **E** or **Enter** accepts it while **C** cancels. The key does nothing while the gauge is not ready, during enemy animations, or in modes where the gauge is hidden.
+Press **L** to fire a limit break. Katyusha's fires at once. Nadeshiko's and Maria's ask you to aim first (see "Aiming a limit break" below). With a unit selected, it fires that unit's limit break, and only when its gauge is full. With nothing selected, it fires the first ready one in the order Katyusha, Nadeshiko, Maria. It works like pressing the glowing gauge: the usual confirmation appears first, and **E** or **Enter** accepts it while **C** cancels. The key does nothing while the gauge is not ready, during enemy animations, or in modes where the gauge is hidden.
 
 ![Route preview: cyan line shows the planned path, orange cells mark danger zones with predicted hit counts](guide_assets/scene_route_preview.png)
 
@@ -81,6 +81,15 @@ Press **T** or **Tab** to lock the nearest drone your unit can reach. Press it a
 If no unit is selected, **T** or **Tab** first selects Katyusha, then locks the nearest drone she can reach. If Katyusha is not available, it falls back to Nadeshiko, then Maria.
 
 Each press that needs the unit to move first plans the firing position for you. The next press swaps that position for the new target instead of adding another step.
+
+### Aiming a limit break
+
+After you confirm Nadeshiko's or Maria's limit break, the same keys aim it. The cursor starts on the unit, and each arrow or **W A S D** press moves it one cell, across any terrain, including water, mountains, and cliffs that the unit itself could never cross.
+
+- When the cursor lands on a cell the break can hit, that cell becomes the previewed target and the preview appears, just as if you had clicked it. If the unit would have to move first to reach it, the move is planned for you.
+- Cells nothing can reach only move the cursor, so you can steer past them to the target you want.
+- Keep moving the cursor to change the target. The preview follows it, and stepping back onto an earlier target previews it again instead of firing.
+- Press **E** or **Enter** to fire at the previewed target. **C** backs out one step at a time, the same as the Cancel button.
 
 ---
 
@@ -110,6 +119,7 @@ The arrow keys do different things depending on what is on screen. **W**, **A**,
 
 | Situation | Left and Right | Up and Down |
 |---|---|---|
+| Aiming a limit break | Move the cursor one cell | Move the cursor one cell |
 | A unit is selected | Step the route one cell, or move the aiming cursor | Step the route one cell, or move the aiming cursor |
 | Nothing selected, queue has actions | Browse queued actions | No effect |
 | Undo browser is open | Step through checkpoints | No effect |
