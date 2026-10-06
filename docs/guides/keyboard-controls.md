@@ -25,7 +25,7 @@ Every shortcut does exactly what the matching on-screen button does. If a button
 | **Backspace** | Remove the last queued action |
 | **I** | Open unit details |
 | **L** | Fire a limit break |
-| **T** or **Tab** | Lock the next reachable drone as the attack target (**Shift** goes back) |
+| **T** or **Tab** | Lock the next reachable drone as the attack target, or pick a stage on the world map (**Shift** goes back) |
 | **+** | Zoom in |
 | **-** | Zoom out |
 | **0** | Reset zoom |
@@ -119,6 +119,18 @@ On the world map, Left and Right page through chapters exactly like the chapter 
 
 ---
 
+## Starting a stage
+
+The world map can be driven from the keyboard too.
+
+1. Press **T** or **Tab** to select a stage. A pulsing cyan frame marks it. The first press picks the first unlocked stage you have not cleared in the current mode, which is usually the one you want to play next. If you have cleared everything, it starts at stage 1.
+2. Press **T** or **Tab** again to move to the next unlocked stage, in stage number order from 1 to 10. After the last one it wraps back to the first. **Shift** goes the other way. Locked stages are skipped, so if only one stage is unlocked, it stays selected.
+3. Press **E** or **Enter** to start the selected stage. It behaves exactly like clicking the stage, including any confirmation or leaderboard screen that appears first.
+
+Changing chapter, mode, or difficulty redraws the map and clears the selection. The map keys pause while a popup is open.
+
+---
+
 ## Undo
 
 Undo is available on Easy difficulty. See the [FAQ](../faq.md) for how checkpoints work.
@@ -171,10 +183,11 @@ Keys are stored by physical position, not by the letter printed on the keycap. I
 4. **T** or **Tab** locks the next reachable drone. **Shift** goes back.
 5. **E** or **Enter** executes. **C** cancels. **Q** queues.
 6. **Z** opens undo on Easy. Arrow keys browse. **Z** or **E** confirms.
-7. **+**, **-**, and **0** zoom in, zoom out, and reset.
-8. **E** and **C** also answer popups.
-9. **W A S D** work like the arrow keys.
-10. Remap everything except Esc, F11, Enter, Tab, and the numpad zoom keys under **Controls** in Options.
+7. On the world map, **T** or **Tab** picks a stage and **E** or **Enter** starts it.
+8. **+**, **-**, and **0** zoom in, zoom out, and reset.
+9. **E** and **C** also answer popups.
+10. **W A S D** work like the arrow keys.
+11. Remap everything except Esc, F11, Enter, Tab, and the numpad zoom keys under **Controls** in Options.
 
 ---
 
