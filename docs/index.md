@@ -1,5 +1,5 @@
 ---
-title: Panzer Island
+title: Reactive turn-based strategy
 description: A reactive turn-based strategy game where every move you make sets the battlefield in motion.
 ---
 

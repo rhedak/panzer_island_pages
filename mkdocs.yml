@@ -6,6 +6,7 @@ site_dir: site
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/shortcut_icon.png
   palette:

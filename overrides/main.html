@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{#- Link previews (Open Graph / X). A page may set `image:` in its front matter (a path under docs/); the default is the key art. -#}
+{% block extrahead %}
+  {%- set og_title = page.meta.title if page.meta and page.meta.title else (page.title if page and page.title else config.site_name) -%}
+  {%- if page and page.is_homepage %}{% set og_title = config.site_name ~ ": a reactive turn-based strategy game" %}{% endif -%}
+  {%- set og_desc = page.meta.description if page.meta and page.meta.description else config.site_description -%}
+  {%- set og_image = config.site_url ~ (page.meta.image if page.meta and page.meta.image else "assets/og-banner.jpg") -%}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ og_title | striptags }}">
+  <meta property="og:description" content="{{ og_desc }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Panzer Island key art: the title beside four of the characters">
+  <meta name="twitter:card" content="summary_large_image">
+{% endblock %}
