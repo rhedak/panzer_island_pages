@@ -8,6 +8,8 @@ revision: 1
 
 *Published November 25, 2026*
 
+![Erika stands alone in a white lab coat in the operations room, with Wilhelm, Katyusha, Nadeshiko, and Maria gathered at the windows behind her over the fleet at dusk.](../assets/webnovel/ch39c.webp){ .chapter-illustration }
+
 Wilhelm found something to say before I found a way to make the conversation short.
 
 "You understand what this will take from you."

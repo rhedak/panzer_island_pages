@@ -8,6 +8,8 @@ revision: 1
 
 *Published November 25, 2026*
 
+![Erika stands at the primary console with both hands on its glowing surface, Wilhelm works a panel beside her, and Katyusha, Nadeshiko, and Maria watch from behind with a naval fleet at sunset beyond the windows.](../assets/webnovel/ch39a.webp){ .chapter-illustration }
+
 "Destroy it," I said, before I let myself check the words for a second time. A decision examined twice from the same angle is not a decision anymore. It is a stall dressed up as one. Katyusha had taught me that without ever saying it in those terms. I had learned it from watching her not hesitate.
 
 I told myself it was because I could name this one's whole cost before I paid it, and the other two would only tell me the price after I owed it. I did not check that reasoning twice either.

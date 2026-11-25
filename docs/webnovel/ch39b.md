@@ -8,6 +8,8 @@ revision: 1
 
 *Published November 25, 2026*
 
+![Erika works at the operations console while Maria, Nadeshiko and Katyusha watch from the room, Wilhelm at a station beyond, and a figure looks out at the fleet through the windows.](../assets/webnovel/ch39b.webp){ .chapter-illustration }
+
 "Wake it."
 
 I had used those two words to myself once already, hours ago, standing in front of three shapes I had not chosen between yet. Saying them out loud to the room changed nothing about what they meant and everything about what they now did.
